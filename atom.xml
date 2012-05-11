@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Unboxed Developer Newsletter]]></title>
+  <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
+  <link href="http://unboxed.github.com/newsletter/"/>
+  <updated>2012-05-11T15:41:44+02:00</updated>
+  <id>http://unboxed.github.com/newsletter/</id>
+  <author>
+    <name><![CDATA[Unboxed Developers]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
