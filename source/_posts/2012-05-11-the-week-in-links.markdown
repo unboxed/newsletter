@@ -28,7 +28,7 @@ As a newcomer to rails, I was impressed that it knew that the plural of "person"
 
 ### Mixins - a refactoring anti-pattern - Murray S.
 
-This http://blog.steveklabnik.com/posts/2012-05-07-mixins--a-refactoring-anti-pattern was quite an interesting discussion about refactoring and complexity.
+This [http://blog.steveklabnik.com/posts/2012-05-07-mixins--a-refactoring-anti-pattern](http://blog.steveklabnik.com/posts/2012-05-07-mixins--a-refactoring-anti-pattern) was quite an interesting discussion about refactoring and complexity.
 
 ## Conferences
 
@@ -36,7 +36,7 @@ This http://blog.steveklabnik.com/posts/2012-05-07-mixins--a-refactoring-anti-pa
 
 [http://rulu.eu](http://rulu.eu)
 
-The 2nd version of Ruby Lugundum (a 2 day conference in Lyon, France, end of June).  I didn't hear anything about their first one last year, I think it was a pretty small affair.  This year's looks more professional and interestingly it seems to have a lineup (http://rulu.eu/2012/05/10/speakers.html) that isn't full of the same old faces spouting the same old talks.  Might be worth going to, and it's only 80€.
+The 2nd version of Ruby Lugundum (a 2 day conference in Lyon, France, end of June).  I didn't hear anything about their first one last year, I think it was a pretty small affair.  This year's looks more professional and interestingly it seems to have [a lineup](http://rulu.eu/2012/05/10/speakers.html) that isn't full of the same old faces spouting the same old talks.  Might be worth going to, and it's only 80€.
 
 ## Text editing
 
@@ -56,13 +56,13 @@ I started using Sublime Text 2 during Blackadder's little vacation last week whi
 
 Sublime Text 2 ships with a command line tool named `subl` to work with files [on the command line](http://www.sublimetext.com/docs/2/osx_command_line.html).  For some reason continually typing `subl` enraged my inner pedant. I wanted my invocation of the application to be more meaningful to me as the invoker.
 
-I therefore used the mystifyingly-popular knowledge trough called 'the internet' to discover this - https://gist.github.com/1236170.  Now I can invoke sublime on the command line using `sublime` instead of `subl`. A few more keystrokes are required but importantly less mental kittens die.
+I therefore used the mystifyingly-popular knowledge trough called 'the internet' to discover this - [https://gist.github.com/1236170](https://gist.github.com/1236170).  Now I can invoke sublime on the command line using `sublime` instead of `subl`. A few more keystrokes are required but importantly less mental kittens die.
 
 ## Know your history
 
 ### Computer Science - History Is Important - Matt F.
 
-Julian Simpson (a.k.a. @thebuilddoctor) tweeted a link to this web log post a while back - http://www.blackliszt.com/2012/03/computer-history.html. I've only just got round to reading it though.  The post argues that software is often a predominantly a-historical discipline which is to its detriment. This is interesting to me because on every new project I work on, I feel I forget to remember the lessons I learnt from the mistakes I made during previous projects.
+Julian Simpson (a.k.a. [@thebuilddoctor](http://twitter.com/thebuilddoctor)) tweeted a link to this web log post a while back - [http://www.blackliszt.com/2012/03/computer-history.html](http://www.blackliszt.com/2012/03/computer-history.html). I've only just got round to reading it though.  The post argues that software is often a predominantly a-historical discipline which is to its detriment. This is interesting to me because on every new project I work on, I feel I forget to remember the lessons I learnt from the mistakes I made during previous projects.
 
 ## Attila
 
@@ -83,7 +83,7 @@ Ruby version dependencies straight in your Gemfile. Coming soon to a Terminal ne
 You can install a prerelease version of Bundler already today:
 `gem install bundler --pre`
 
-There's an article on the Heroku blog about this, make sure to read http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku
+There's an article on the Heroku blog about this, make sure to read [http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku](http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku)
 I'm looking forward to RVM and RBenv to hook into these if possible and provide us a seamless switch between different projects that use different versions of Ruby.
 
 ## Readability Article Publishing Guidelines
