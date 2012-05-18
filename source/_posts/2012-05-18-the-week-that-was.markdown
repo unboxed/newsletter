@@ -10,9 +10,9 @@ Welcome to this weeks installment. @jpawlyn submits for your consideration the f
 
 ## Mac OS
 
-### A QuickLook plugin that lets you view plain text files without a file extension - via @sren, @markscholtz and last but certainly not least @Iron_Matt
+### View plain text files without a file extension - @sren via @markscholtz and @Iron_Matt
 
-* [https://github.com/whomwah/qlstephen](https://github.com/whomwah/qlstephen)
+A [QuickLook plugin](https://github.com/whomwah/qlstephen) that lets you view plain text files without a file extension.
 
 ## Rails
 
