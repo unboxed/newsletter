@@ -24,7 +24,7 @@ This week I watched 3 of the keynotes from RailsConf 2012:
 * Aaron Patterson on [I've made a huge mistake](http://www.confreaks.com/videos/880-railsconf2012-keynote-i-ve-made-a-huge-mistake)
 * Yehuda Katz on [Rails: The next five years](http://www.confreaks.com/videos/907-railsconf2012-rails-the-next-five-years)
 
-I would genuinely say don't bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also fuck off.
+I would genuinely say don't bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also, in characteristic style, he tells you to fuck off if you don't agree.
 
 Aaron Patterson basically skirts around the same issues in much less time, actually, I struggle to remember what his point was.
 
