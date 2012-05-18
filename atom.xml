@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-05-11T16:23:35+02:00</updated>
+  <updated>2012-05-18T15:37:34+02:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -12,6 +12,123 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The week that was]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was/"/>
+    <updated>2012-05-18T14:00:00+02:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was</id>
+    <content type="html"><![CDATA[<p>Welcome to this weeks installment. @jpawlyn submits for your consideration the following tasty crumpets from the land of tech.</p>
+
+<h2>Mac OS</h2>
+
+<h3>A QuickLook plugin that lets you view plain text files without a file extension - via @sren, @markscholtz and last but certainly not least @Iron_Matt</h3>
+
+<ul>
+<li><a href="https://github.com/whomwah/qlstephen">https://github.com/whomwah/qlstephen</a></li>
+</ul>
+
+
+<h2>Rails</h2>
+
+<h3>RailsConf 2012 - @hlame</h3>
+
+<p>This week I watched 3 of the keynotes from RailsConf 2012:</p>
+
+<p>DHH on <a href="http://www.confreaks.com/videos/854-railsconf2012-keynote-progress">Progress</a>
+Aaron Patterson on <a href="http://www.confreaks.com/videos/880-railsconf2012-keynote-i-ve-made-a-huge-mistake">I&#8217;ve made a huge mistake</a>
+Yehuda Katz on <a href="http://www.confreaks.com/videos/907-railsconf2012-rails-the-next-five-years">Rails: The next five years</a></p>
+
+<p>I would genuinely say don&#8217;t bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also fuck off.  Aaron Patterson basically skirts around the same issues in much less time, actually, I struggle to remember what his point was.  Finally, Yehuda actually spends most of his talk speaking about the past 5 years of Rails and where it&#8217;s been rather than where it&#8217;s going.  He makes some good points about (again) not complaining when something appears in Rails that you don&#8217;t like, or don&#8217;t think should be part of the core.  It&#8217;s usually a good idea so that things get wide usage and standardised to work out the bugs.  It&#8217;s not till the last quarter of the talk that he mentions some things that might go into the next versions of Rails (JSON serializers as first class objects), but it&#8217;s hardly &#8220;next five years&#8221;, I&#8217;d argue that it&#8217;s not even &#8220;next five months&#8221;.</p>
+
+<p>Anyway, there are loads of other talks to watch online and I&#8217;d say that these 3 keynotes aren&#8217;t worth your time. There are some good points in them, but not enough to warrant spending the ~2hrs it would take to watch all 3; seek out some write-ups and notes and you&#8217;ll get all the good points much quicker.</p>
+
+<h3>CanCan - Grant</h3>
+
+<p>I really love this library and usually use it by default on all my personal projects plus I usually update my controller generators to use this by default.
+So I recommend we use this on all our new projects :)</p>
+
+<p><a href="https://github.com/ryanb/cancan">CanCan</a> is an authorization library for Ruby on Rails which restricts what resources a given user is allowed to access. All permissions are defined in a single location (the Ability class) and not duplicated across controllers, views, and database queries.</p>
+
+<h2>Markup and Javascript</h2>
+
+<h3>Maps - Joerge boy</h3>
+
+<p>If we want to use maps - we are not limited to Google. Even if we have written a lot of javascript code already that deals with the Google Maps API - that&#8217;s not a problem. Because - part of the Google API - version 3 at least - you can swap out the mapping tiles for more attractive looking tiles - either from OpenStreetMap (OSM) directly - or for even more attractive tiles from Stamen.</p>
+
+<p><a href="http://maps.stamen.com">http://maps.stamen.com</a></p>
+
+<p>Just add the following code where you fire up maps, and drool over the difference.</p>
+
+<pre><code>// replace "toner" here with "terrain" or "watercolor"
+var layer = "toner";
+var map = new google.maps.Map(document.getElementById("element_id"), {
+    center: new google.maps.LatLng(37.7, -122.4),
+    zoom: 12,
+    mapTypeId: layer,
+    mapTypeControlOptions: {
+        mapTypeIds: [layer]
+    }
+});
+map.mapTypes.set(layer, new google.maps.StamenMapType(layer));
+</code></pre>
+
+<h3>Ripple Effect - Matt P</h3>
+
+<p>A few weeks ago I discovered this gem (no, not the ruby kind) via twitter:
+ - <a href="http://alligator.github.com/lake.js/">How to add an animated ripple effect to water images</a></p>
+
+<h3>WTFWG - Carl</h3>
+
+<p>Hacker news continues to play the role of daily mail for devs and I do so love standardisation rage bait.</p>
+
+<p>srcset gets in over picture QQ</p>
+
+<p><a href="http://timkadlec.com/2012/05/wtfwg/">http://timkadlec.com/2012/05/wtfwg/</a></p>
+
+<h2>Programming and Architecture</h2>
+
+<h3>State Machines - Tony</h3>
+
+<p>Was a nice recap on <a href="http://blog.markwshead.com/869/state-machines-computer-science/">state machines</a>. It&#8217;s a good thing for everyone to know and I&#8217;ve seen too many projects with complicated processes which would be more appropriate with a state machine.</p>
+
+<h3>Smorgasbord - @Iron_Matt</h3>
+
+<p><a href="http://www.drdobbs.com/architecture-and-design/240000393">Ward Cunningham</a> interviewed on the occasion of winning the Dr Dobb&#8217;s Excellence In Programming Award.
+Wiki inventor, Agile Manifesto co-signatory, Smalltalk ninja, Sublime Text 2 user and undoubted troll-bait for Tilly due to his love for CoffeeScript <em>and</em> node.js.</p>
+
+<p><a href="http://www.drdobbs.com/architecture-and-design/227400034">&#8216;Brogrammer&#8217;? &#8216;Rock Star&#8217;?</a>  Thanks but I&#8217;d rather collaborate with <a href="http://www.drdobbs.com/architecture-and-design/227400034?pgno=2">these folk</a>
+Especially Larry Wall, King of the Hawaiian Shirt-sported-in-the-workplace</p>
+
+<p>I&#8217;ve been documenting <a href="https://wiki.unboxedconsulting.com/wiki/Non-functional_Requirements">Non-functional Requirements</a> on our wiki as part of the ISO9001 work.  All contributions are welcome.  Just imagine if there were actual flaming torches on the wall monitoring our hardware&#8230;</p>
+
+<h3>Rating Systems - Matt P</h3>
+
+<p>Imagine you have a site with some form of voting or rating sytem.  How should you sort the rated items? Your probable initial guess of &#8220;just calculate the average&#8221; is wrong - see why by reading <a href="http://evanmiller.org/how-not-to-sort-by-average-rating.html">this</a>
+(This one happily contains a ruby fragment)</p>
+
+<h2>DBs</h2>
+
+<h3>Goodbye MongoDB - Carl</h3>
+
+<p>Everyone seems to be hating on mongo right now and having been in a similar situation I can sympathise with the reasoning behind <a href="http://www.zopyx.de/blog/goodbye-mongodb">this article</a>.</p>
+
+<p>When someone from your database vendor comes into your office and suggests you throw more tin at a problem, you&#8217;re in trouble.</p>
+
+<h2>Sysadmin</h2>
+
+<h3>Server monitoring - @sren via @Iron_Matt</h3>
+
+<p>A <a href="http://nerds.airbnb.com/monitoring-your-serverswith-fire">nice post</a> from AirBnB about monitoring servers with fire lamps.
+Harnessing the power of the elements for the purpose of monitoring is a brilliant way to focus teams on NFRs.</p>
+
+<h2>Notices</h2>
+
+<h3>7 Languages in 7 Weeks - Matt P</h3>
+
+<p>Starting next Wednesday, I will be undertaking a project called 7 Languages in 7 Weeks.  1-2 hours over 3 days is all that&#8217;s required so if you are looking for another time-sink then look no further! It&#8217;s currently me and 2 other friends taking part, but any one else interested would be more than welcome. We&#8217;ll be covering Ruby, Io, Prolog, Scala, Erlang, Clojure and Haskell, and no prior experience in any of the languages is required. I&#8217;ve brought the book in with me today, for if anybody wants to take a gander.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The week in links]]></title>
@@ -43,7 +160,7 @@
 
 <h3>Mixins - a refactoring anti-pattern - Murray S.</h3>
 
-<p>This http://blog.steveklabnik.com/posts/2012-05-07-mixins&#8211;a-refactoring-anti-pattern was quite an interesting discussion about refactoring and complexity.</p>
+<p>This <a href="http://blog.steveklabnik.com/posts/2012-05-07-mixins--a-refactoring-anti-pattern">http://blog.steveklabnik.com/posts/2012-05-07-mixins&#8211;a-refactoring-anti-pattern</a> was quite an interesting discussion about refactoring and complexity.</p>
 
 <h2>Conferences</h2>
 
@@ -51,7 +168,7 @@
 
 <p><a href="http://rulu.eu">http://rulu.eu</a></p>
 
-<p>The 2nd version of Ruby Lugundum (a 2 day conference in Lyon, France, end of June).  I didn&#8217;t hear anything about their first one last year, I think it was a pretty small affair.  This year&#8217;s looks more professional and interestingly it seems to have a lineup (http://rulu.eu/2012/05/10/speakers.html) that isn&#8217;t full of the same old faces spouting the same old talks.  Might be worth going to, and it&#8217;s only 80€.</p>
+<p>The 2nd version of Ruby Lugundum (a 2 day conference in Lyon, France, end of June).  I didn&#8217;t hear anything about their first one last year, I think it was a pretty small affair.  This year&#8217;s looks more professional and interestingly it seems to have <a href="http://rulu.eu/2012/05/10/speakers.html">a lineup</a> that isn&#8217;t full of the same old faces spouting the same old talks.  Might be worth going to, and it&#8217;s only 80€.</p>
 
 <h2>Text editing</h2>
 
@@ -71,13 +188,13 @@
 
 <p>Sublime Text 2 ships with a command line tool named <code>subl</code> to work with files <a href="http://www.sublimetext.com/docs/2/osx_command_line.html">on the command line</a>.  For some reason continually typing <code>subl</code> enraged my inner pedant. I wanted my invocation of the application to be more meaningful to me as the invoker.</p>
 
-<p>I therefore used the mystifyingly-popular knowledge trough called &#8216;the internet&#8217; to discover this - https://gist.github.com/1236170.  Now I can invoke sublime on the command line using <code>sublime</code> instead of <code>subl</code>. A few more keystrokes are required but importantly less mental kittens die.</p>
+<p>I therefore used the mystifyingly-popular knowledge trough called &#8216;the internet&#8217; to discover this - <a href="https://gist.github.com/1236170">https://gist.github.com/1236170</a>.  Now I can invoke sublime on the command line using <code>sublime</code> instead of <code>subl</code>. A few more keystrokes are required but importantly less mental kittens die.</p>
 
 <h2>Know your history</h2>
 
 <h3>Computer Science - History Is Important - Matt F.</h3>
 
-<p>Julian Simpson (a.k.a. @thebuilddoctor) tweeted a link to this web log post a while back - http://www.blackliszt.com/2012/03/computer-history.html. I&#8217;ve only just got round to reading it though.  The post argues that software is often a predominantly a-historical discipline which is to its detriment. This is interesting to me because on every new project I work on, I feel I forget to remember the lessons I learnt from the mistakes I made during previous projects.</p>
+<p>Julian Simpson (a.k.a. <a href="http://twitter.com/thebuilddoctor">@thebuilddoctor</a>) tweeted a link to this web log post a while back - <a href="http://www.blackliszt.com/2012/03/computer-history.html">http://www.blackliszt.com/2012/03/computer-history.html</a>. I&#8217;ve only just got round to reading it though.  The post argues that software is often a predominantly a-historical discipline which is to its detriment. This is interesting to me because on every new project I work on, I feel I forget to remember the lessons I learnt from the mistakes I made during previous projects.</p>
 
 <h2>Attila</h2>
 
@@ -98,7 +215,7 @@ gem  'rails', '3.2.3'
 <p>You can install a prerelease version of Bundler already today:
 <code>gem install bundler --pre</code></p>
 
-<p>There&#8217;s an article on the Heroku blog about this, make sure to read http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku
+<p>There&#8217;s an article on the Heroku blog about this, make sure to read <a href="http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku">http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku</a>
 I&#8217;m looking forward to RVM and RBenv to hook into these if possible and provide us a seamless switch between different projects that use different versions of Ruby.</p>
 
 <h2>Readability Article Publishing Guidelines</h2>
