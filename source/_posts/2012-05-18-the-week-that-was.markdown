@@ -20,11 +20,15 @@ A [QuickLook plugin](https://github.com/whomwah/qlstephen) that lets you view pl
 
 This week I watched 3 of the keynotes from RailsConf 2012:
 
-DHH on [Progress](http://www.confreaks.com/videos/854-railsconf2012-keynote-progress)
-Aaron Patterson on [I've made a huge mistake](http://www.confreaks.com/videos/880-railsconf2012-keynote-i-ve-made-a-huge-mistake)
-Yehuda Katz on [Rails: The next five years](http://www.confreaks.com/videos/907-railsconf2012-rails-the-next-five-years)
+* DHH on [Progress](http://www.confreaks.com/videos/854-railsconf2012-keynote-progress)
+* Aaron Patterson on [I've made a huge mistake](http://www.confreaks.com/videos/880-railsconf2012-keynote-i-ve-made-a-huge-mistake)
+* Yehuda Katz on [Rails: The next five years](http://www.confreaks.com/videos/907-railsconf2012-rails-the-next-five-years)
 
-I would genuinely say don't bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also fuck off.  Aaron Patterson basically skirts around the same issues in much less time, actually, I struggle to remember what his point was.  Finally, Yehuda actually spends most of his talk speaking about the past 5 years of Rails and where it's been rather than where it's going.  He makes some good points about (again) not complaining when something appears in Rails that you don't like, or don't think should be part of the core.  It's usually a good idea so that things get wide usage and standardised to work out the bugs.  It's not till the last quarter of the talk that he mentions some things that might go into the next versions of Rails (JSON serializers as first class objects), but it's hardly "next five years", I'd argue that it's not even "next five months".
+I would genuinely say don't bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also fuck off.
+
+Aaron Patterson basically skirts around the same issues in much less time, actually, I struggle to remember what his point was.
+
+Finally, Yehuda actually spends most of his talk speaking about the past 5 years of Rails and where it's been rather than where it's going.  He makes some good points about (again) not complaining when something appears in Rails that you don't like, or don't think should be part of the core.  It's usually a good idea so that things get wide usage and standardised to work out the bugs.  It's not till the last quarter of the talk that he mentions some things that might go into the next versions of Rails (JSON serializers as first class objects), but it's hardly "next five years", I'd argue that it's not even "next five months".
 
 Anyway, there are loads of other talks to watch online and I'd say that these 3 keynotes aren't worth your time. There are some good points in them, but not enough to warrant spending the ~2hrs it would take to watch all 3; seek out some write-ups and notes and you'll get all the good points much quicker.
 
