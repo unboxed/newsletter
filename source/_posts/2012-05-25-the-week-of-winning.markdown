@@ -79,3 +79,9 @@ As a side note, some of the wording on the WebApp is a bit confusing. The number
 
 Theres is a [hack day](http://digitalshoreditch.com/hack/) being run at the Google Campus tomorrow as part of Digital Shoreditch.
 I only found out about it today, looks like it could be interesting.
+
+## Saving the best for last (courtesy of Luke)
+
+### [Uncle Bob on the problem with ActiveRecord](http://blog.objectmentor.com/articles/2007/11/02/active-record-vs-objects)
+
+### [Dr. Dobbs interviews Ward Cunningham](http://www.drdobbs.com/architecture-and-design/240000393) on the wiki, OO design, and all sorts of other stuff.
