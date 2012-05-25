@@ -61,9 +61,9 @@ An article outlining the set-up of (hopefully) optimal [browser testing](http://
 
 ## More things!
 
-### New EU Cookie Law (courtesy of Murray)
+### New EU Cookie Law (courtesy of Murray and Leo)
 
-A [public domain letter](http://gilest.org/20120517-cookie-law-text.html) for web developers to send to their clients about the new EU cookie law that comes into law at the end of this month:
+A [public domain letter](http://gilest.org/20120517-cookie-law-text.html) for web developers to send to their clients about the [new EU cookie law](http://www.theregister.co.uk/2012/05/18/cookie_law_ico/) that comes into law at the end of this month:
 
 Seems pretty sensible and if you don't already know what the law is, this is as good and simple a rundown as any I've read.
 
