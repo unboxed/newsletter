@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-05-18T15:49:05+02:00</updated>
+  <updated>2012-05-25T15:56:24+02:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Week Of Winning]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning/"/>
+    <updated>2012-05-25T15:00:00+02:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning</id>
+    <content type="html"><![CDATA[<p>This weeks instalment is awesome, mainly due to the lack of content from its author. Enjoy!</p>
+
+<h2>Railsy/Ruby Stuffs</h2>
+
+<h3><a href="http://www.rubymotion.com/">RubyMotion</a> (courtesy of Lee and Robert F)</h3>
+
+<p>It&#8217;s a toolset that sits on top of the iOS development tools to allow you to use Ruby to build iOS applications.</p>
+
+<p>this is something I&#8217;ve been speaking to Richard about trialling and will be doing so to build the UBXD expenses app in the near future.</p>
+
+<p><a href="http://rubyweekly.us1.list-manage.com/track/click?u=0618f6a79d6bb9675f313ceb2&amp;id=e1dc28d2b9&amp;e=3fcba5cd8e">Live</a> is a gem for RubyMotion implementing some of the ideas presented in Bret Victor’s awesome &#8216;Inventing on Principle&#8217; talk. It interfaces with the REPL and allows you to control it from the comfort of your preferred text editor.</p>
+
+<h3><a href="http://rubyweekly.us1.list-manage1.com/track/click?u=0618f6a79d6bb9675f313ceb2&amp;id=930588937e&amp;e=3fcba5cd8e">Objectify</a>: A Better Way to Build Rails Applications (courtesy of Robert F)</h3>
+
+<p>Objectify is a framework that codifies good object oriented design practices for building maintainable Rails applications. In this post, James Golick explains the motivations.</p>
+
+<h3>Spec Naming (courtesy of Murray)</h3>
+
+<p>A nugget from the StoryWeb specs:</p>
+
+<pre><code>describe "is_recommendable_to_recipient?" do
+  before :each do
+    @workgroup = Workgroup.make!(:name =&gt; 'The Giraffes')
+    @user = User.make!
+  end
+
+  context "for a workgroup" do
+    it "should be true" do
+      Story.make!(:published, :workgroups =&gt; [@workgroup]).is_recommendable_to_recipient?(@workgroup).should be_true
+    end
+
+    it "should be false" do
+      Story.make!.is_recommendable_to_recipient?(@workgroup).should be_false
+    end
+  end
+</code></pre>
+
+<p>Those example names come down to: &#8220;is_recommendable_to_recipient? for a workgroup should be true&#8221; and &#8220;is_recommendable_to_recipient? for a workgroup should be false&#8221;.  That&#8217;s not super helpful when examining the specdoc output.  Take a moment to name your specs with care, so that I don&#8217;t have to read the code within them to work out why it &#8220;should be true&#8221;.  For me, better names would be:</p>
+
+<p>&#8220;is_recommendable_to_recipient? for a workgroup should be true if the workgroup does not belong to the story&#8221; and
+&#8220;is_recommendable_to_recipient? for a workgroup should be false if the workgroup belongs to the story&#8221;</p>
+
+<p>Of course, there may be shorter ways to express this, and they would be fine too, but my point stands.  The names of all the specs, when read together should be enough to describe the behaviour of the object under spec without me reading the contents of the spec.</p>
+
+<h2>Dev things</h2>
+
+<h3>Jenkins Power (courtesy of Jolyon (or James if you work in Starbucks))</h3>
+
+<p>You gotta love a <a href="http://jenkins-ci.org/">CI</a> that enables you to specify a git repo and then runs tests on any branch that changes. But hold on just one second I hear you say, that&#8217;s not ideal if you&#8217;re working on a feature branch and the tests aren&#8217;t yet passing. Easily solved. Just specify the branches that you want to run tests against in the <a href="https://jenkins.unboxedconsulting.com/job/Five_Capetown/configure">project configuration</a>. Power to the people.</p>
+
+<h3>Cross-browser testing (courtesy of Austin)</h3>
+
+<p>An article outlining the set-up of (hopefully) optimal <a href="http://coding.smashingmagazine.com/2011/09/02/reliable-cross-browser-testing-part-1-internet-explorer/">browser testing</a></p>
+
+<h2>More things!</h2>
+
+<h3>New EU Cookie Law (courtesy of Murray and Leo)</h3>
+
+<p>A <a href="http://gilest.org/20120517-cookie-law-text.html">public domain letter</a> for web developers to send to their clients about the <a href="http://www.theregister.co.uk/2012/05/18/cookie_law_ico/">new EU cookie law</a> that comes into law at the end of this month:</p>
+
+<p>Seems pretty sensible and if you don&#8217;t already know what the law is, this is as good and simple a rundown as any I&#8217;ve read.</p>
+
+<h3>Colour Gradient Generator (courtesy of Matt P)</h3>
+
+<p>I found <a href="http://www.herethere.net/~samson/php/color_gradient/">this</a> a couple of weeks ago when working on something with Matt F.
+It allows you to specify a start colour, an end colour, and a number of steps, and it will generate the evenly spaced colours which lie between.
+As a side note, some of the wording on the WebApp is a bit confusing. The number being asked for is the number of steps in total, i.e. the number of colours included in the range will be 1 higher than this, or 1 less than the number of new colors generating (not counting the start and end point you specify).</p>
+
+<h2>Events</h2>
+
+<h3>Mobile Hack-a-Jam-a-Mashup-Athon (courtesy of Seb)</h3>
+
+<p>Theres is a <a href="http://digitalshoreditch.com/hack/">hack day</a> being run at the Google Campus tomorrow as part of Digital Shoreditch.
+I only found out about it today, looks like it could be interesting.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The week that was]]></title>
@@ -32,11 +114,18 @@
 
 <p>This week I watched 3 of the keynotes from RailsConf 2012:</p>
 
-<p>DHH on <a href="http://www.confreaks.com/videos/854-railsconf2012-keynote-progress">Progress</a>
-Aaron Patterson on <a href="http://www.confreaks.com/videos/880-railsconf2012-keynote-i-ve-made-a-huge-mistake">I&#8217;ve made a huge mistake</a>
-Yehuda Katz on <a href="http://www.confreaks.com/videos/907-railsconf2012-rails-the-next-five-years">Rails: The next five years</a></p>
+<ul>
+<li>DHH on <a href="http://www.confreaks.com/videos/854-railsconf2012-keynote-progress">Progress</a></li>
+<li>Aaron Patterson on <a href="http://www.confreaks.com/videos/880-railsconf2012-keynote-i-ve-made-a-huge-mistake">I&#8217;ve made a huge mistake</a></li>
+<li>Yehuda Katz on <a href="http://www.confreaks.com/videos/907-railsconf2012-rails-the-next-five-years">Rails: The next five years</a></li>
+</ul>
 
-<p>I would genuinely say don&#8217;t bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also fuck off.  Aaron Patterson basically skirts around the same issues in much less time, actually, I struggle to remember what his point was.  Finally, Yehuda actually spends most of his talk speaking about the past 5 years of Rails and where it&#8217;s been rather than where it&#8217;s going.  He makes some good points about (again) not complaining when something appears in Rails that you don&#8217;t like, or don&#8217;t think should be part of the core.  It&#8217;s usually a good idea so that things get wide usage and standardised to work out the bugs.  It&#8217;s not till the last quarter of the talk that he mentions some things that might go into the next versions of Rails (JSON serializers as first class objects), but it&#8217;s hardly &#8220;next five years&#8221;, I&#8217;d argue that it&#8217;s not even &#8220;next five months&#8221;.</p>
+
+<p>I would genuinely say don&#8217;t bother.  DHH goes on for way too long without really saying anything other than progress means change, Rails 4 will change, Rails 4 will break things, but it will be better so stop complaining and just live with it. Also, in characteristic style, he tells you to fuck off if you don&#8217;t agree.</p>
+
+<p>Aaron Patterson basically skirts around the same issues in much less time, actually, I struggle to remember what his point was.</p>
+
+<p>Finally, Yehuda actually spends most of his talk speaking about the past 5 years of Rails and where it&#8217;s been rather than where it&#8217;s going.  He makes some good points about (again) not complaining when something appears in Rails that you don&#8217;t like, or don&#8217;t think should be part of the core.  It&#8217;s usually a good idea so that things get wide usage and standardised to work out the bugs.  It&#8217;s not till the last quarter of the talk that he mentions some things that might go into the next versions of Rails (JSON serializers as first class objects), but it&#8217;s hardly &#8220;next five years&#8221;, I&#8217;d argue that it&#8217;s not even &#8220;next five months&#8221;.</p>
 
 <p>Anyway, there are loads of other talks to watch online and I&#8217;d say that these 3 keynotes aren&#8217;t worth your time. There are some good points in them, but not enough to warrant spending the ~2hrs it would take to watch all 3; seek out some write-ups and notes and you&#8217;ll get all the good points much quicker.</p>
 

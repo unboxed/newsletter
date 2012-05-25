@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>The Week Of Winning - Unboxed Developer Newsletter</title>
+  <meta name="author" content="Unboxed Developers">
+
+  
+  <meta name="description" content="This weeks instalment is awesome, mainly due to the lack of content from its author. Enjoy! Railsy/Ruby Stuffs RubyMotion (courtesy of Lee and Robert &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning">
+  <link href="/newsletter/favicon.png" rel="icon">
+  <link href="/newsletter/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/newsletter/javascripts/modernizr-2.0.js"></script>
+  <script src="/newsletter/javascripts/ender.js"></script>
+  <script src="/newsletter/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Unboxed Developer Newsletter" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/newsletter/">Unboxed Developer Newsletter</a></h1>
+  
+    <h2>Where awesome goes to die</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:unboxed.github.com/newsletter" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/newsletter/">Blog</a></li>
+  <li><a href="/newsletter/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">The Week of Winning</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-25T15:00:00+02:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This weeks instalment is awesome, mainly due to the lack of content from its author. Enjoy!</p>
+
+<h2>Railsy/Ruby Stuffs</h2>
+
+<h3><a href="http://www.rubymotion.com/">RubyMotion</a> (courtesy of Lee and Robert F)</h3>
+
+<p>It&#8217;s a toolset that sits on top of the iOS development tools to allow you to use Ruby to build iOS applications.</p>
+
+<p>this is something I&#8217;ve been speaking to Richard about trialling and will be doing so to build the UBXD expenses app in the near future.</p>
+
+<p><a href="http://rubyweekly.us1.list-manage.com/track/click?u=0618f6a79d6bb9675f313ceb2&amp;id=e1dc28d2b9&amp;e=3fcba5cd8e">Live</a> is a gem for RubyMotion implementing some of the ideas presented in Bret Victor’s awesome &#8216;Inventing on Principle&#8217; talk. It interfaces with the REPL and allows you to control it from the comfort of your preferred text editor.</p>
+
+<h3><a href="http://rubyweekly.us1.list-manage1.com/track/click?u=0618f6a79d6bb9675f313ceb2&amp;id=930588937e&amp;e=3fcba5cd8e">Objectify</a>: A Better Way to Build Rails Applications (courtesy of Robert F)</h3>
+
+<p>Objectify is a framework that codifies good object oriented design practices for building maintainable Rails applications. In this post, James Golick explains the motivations.</p>
+
+<h3>Spec Naming (courtesy of Murray)</h3>
+
+<p>A nugget from the StoryWeb specs:</p>
+
+<pre><code>describe "is_recommendable_to_recipient?" do
+  before :each do
+    @workgroup = Workgroup.make!(:name =&gt; 'The Giraffes')
+    @user = User.make!
+  end
+
+  context "for a workgroup" do
+    it "should be true" do
+      Story.make!(:published, :workgroups =&gt; [@workgroup]).is_recommendable_to_recipient?(@workgroup).should be_true
+    end
+
+    it "should be false" do
+      Story.make!.is_recommendable_to_recipient?(@workgroup).should be_false
+    end
+  end
+</code></pre>
+
+<p>Those example names come down to: &#8220;is_recommendable_to_recipient? for a workgroup should be true&#8221; and &#8220;is_recommendable_to_recipient? for a workgroup should be false&#8221;.  That&#8217;s not super helpful when examining the specdoc output.  Take a moment to name your specs with care, so that I don&#8217;t have to read the code within them to work out why it &#8220;should be true&#8221;.  For me, better names would be:</p>
+
+<p>&#8220;is_recommendable_to_recipient? for a workgroup should be true if the workgroup does not belong to the story&#8221; and
+&#8220;is_recommendable_to_recipient? for a workgroup should be false if the workgroup belongs to the story&#8221;</p>
+
+<p>Of course, there may be shorter ways to express this, and they would be fine too, but my point stands.  The names of all the specs, when read together should be enough to describe the behaviour of the object under spec without me reading the contents of the spec.</p>
+
+<h2>Dev things</h2>
+
+<h3>Jenkins Power (courtesy of Jolyon (or James if you work in Starbucks))</h3>
+
+<p>You gotta love a <a href="http://jenkins-ci.org/">CI</a> that enables you to specify a git repo and then runs tests on any branch that changes. But hold on just one second I hear you say, that&#8217;s not ideal if you&#8217;re working on a feature branch and the tests aren&#8217;t yet passing. Easily solved. Just specify the branches that you want to run tests against in the <a href="https://jenkins.unboxedconsulting.com/job/Five_Capetown/configure">project configuration</a>. Power to the people.</p>
+
+<h3>Cross-browser testing (courtesy of Austin)</h3>
+
+<p>An article outlining the set-up of (hopefully) optimal <a href="http://coding.smashingmagazine.com/2011/09/02/reliable-cross-browser-testing-part-1-internet-explorer/">browser testing</a></p>
+
+<h2>More things!</h2>
+
+<h3>New EU Cookie Law (courtesy of Murray and Leo)</h3>
+
+<p>A <a href="http://gilest.org/20120517-cookie-law-text.html">public domain letter</a> for web developers to send to their clients about the <a href="http://www.theregister.co.uk/2012/05/18/cookie_law_ico/">new EU cookie law</a> that comes into law at the end of this month:</p>
+
+<p>Seems pretty sensible and if you don&#8217;t already know what the law is, this is as good and simple a rundown as any I&#8217;ve read.</p>
+
+<h3>Colour Gradient Generator (courtesy of Matt P)</h3>
+
+<p>I found <a href="http://www.herethere.net/~samson/php/color_gradient/">this</a> a couple of weeks ago when working on something with Matt F.
+It allows you to specify a start colour, an end colour, and a number of steps, and it will generate the evenly spaced colours which lie between.
+As a side note, some of the wording on the WebApp is a bit confusing. The number being asked for is the number of steps in total, i.e. the number of colours included in the range will be 1 higher than this, or 1 less than the number of new colors generating (not counting the start and end point you specify).</p>
+
+<h2>Events</h2>
+
+<h3>Mobile Hack-a-Jam-a-Mashup-Athon (courtesy of Seb)</h3>
+
+<p>Theres is a <a href="http://digitalshoreditch.com/hack/">hack day</a> being run at the Google Campus tomorrow as part of Digital Shoreditch.
+I only found out about it today, looks like it could be interesting.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Unboxed Developers</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-25T15:00:00+02:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning/" data-via="ubxd" data-counturl="http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/newsletter/blog/2012/05/18/the-week-that-was/" title="Previous Post: The week that was">&laquo; The week that was</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/05/25/the-week-of-winning/">The Week Of Winning</a>
+      </li>
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/05/18/the-week-that-was/">The week that was</a>
+      </li>
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/05/11/the-week-in-links/">The week in links</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/unboxed">@unboxed</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'unboxed',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/newsletter/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ubxd", 4, false);
+    });
+  </script>
+  <script src="/newsletter/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/ubxd" class="twitter-follow-button" data-show-count="false">Follow @ubxd</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Unboxed Developers -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
