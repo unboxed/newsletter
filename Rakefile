@@ -329,21 +329,31 @@ task :setup_github_pages, :repo do |t, args|
   File.open('_config.yml', 'w') do |f|
     f.write jekyll_config
   end
+  
   rm_rf deploy_dir
   mkdir deploy_dir
-  cd "#{deploy_dir}" do
-    system "git init"
-    system "echo 'My Octopress Page is coming soon &hellip;' > index.html"
-    system "git add ."
-    system "git commit -m \"Octopress init\""
-    system "git branch -m gh-pages" unless branch == 'master'
-    system "git remote add origin #{repo_url}"
-    rakefile = IO.read(__FILE__)
-    rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
-    rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
-    File.open(__FILE__, 'w') do |f|
-      f.write rakefile
+  if system "git branch -a | grep remotes/origin/gh-pages"
+    puts "Using existing gh-pages branch"
+    system "git clone #{repo_url} #{deploy_dir}"
+    cd "#{deploy_dir}" do
+      system "git checkout gh-pages"
     end
+  else
+    puts "Setting up new gh-pages branch"
+    cd "#{deploy_dir}" do
+      system "git init"
+      system "echo 'My Octopress Page is coming soon &hellip;' > index.html"
+      system "git add ."
+      system "git commit -m \"Octopress init\""
+      system "git branch -m gh-pages" unless branch == 'master'
+      system "git remote add origin #{repo_url}"
+    end
+  end
+  rakefile = IO.read(__FILE__)
+  rakefile.sub!(/deploy_branch(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_branch\\1=\\2\\3#{branch}\\3")
+  rakefile.sub!(/deploy_default(\s*)=(\s*)(["'])[\w-]*["']/, "deploy_default\\1=\\2\\3push\\3")
+  File.open(__FILE__, 'w') do |f|
+    f.write rakefile
   end
   puts "\n---\n## Now you can deploy to #{url} with `rake deploy` ##"
 end
@@ -369,6 +379,10 @@ def ask(message, valid_options)
   end
   answer
 end
+
+task :woo do
+end
+
 
 desc "list tasks"
 task :list do
