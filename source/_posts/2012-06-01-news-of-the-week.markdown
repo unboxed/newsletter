@@ -109,16 +109,20 @@ Lets say you have a model, 'Cindy', and Cindy has\_many AnnoyingFriends.  Lets a
 
 Typically you will have a nasty block of code in you controller somewhere which does something along the lines of this:
 
-*Find all annoying_freinds attached to Cindy which are not in params[:annoying_friend_ids] and DESTROY them.
-*Throw out all ids in params[:annoying_friend_ids] which are already attached to Cindy
-*Create new friendships for the remaining ids.
+* Find all annoying\_friends attached to Cindy which are not in `params[:annoying_friend_ids]` and DESTROY them.
+* Throw out all ids in `params[:annoying_friend_ids]` which are already attached to Cindy
+* Create new friendships for the remaining ids.
 
 _Happily we don't need to do this again... ever..._
+
 Maybe everyone else already knows about this, but rails generates a couple of methods for you.
 
 This works:
+
 `cindy.update_attribute(:annoying_friend_ids, params[:annoying_friend_ids])`
+
 or
+
 `cindy.annoying_friend_ids = params[:annoying_friend_ids]`
 
 and rails will take care of the rest of the mess.  Rails does make sure that actual records exist for each of the ids passed in. Additionally there's a getter which is useful for pre-populating form input values.
