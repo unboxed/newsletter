@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>News News News - Unboxed Developer Newsletter</title>
+  <meta name="author" content="Unboxed Developers">
+
+  
+  <meta name="description" content="Tips for successful pair programming (Lee Richmond) https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming Lee wrote his first &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news">
+  <link href="/newsletter/favicon.png" rel="icon">
+  <link href="/newsletter/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/newsletter/javascripts/modernizr-2.0.js"></script>
+  <script src="/newsletter/javascripts/ender.js"></script>
+  <script src="/newsletter/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Unboxed Developer Newsletter" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/newsletter/">Unboxed Developer Newsletter</a></h1>
+  
+    <h2>Where awesome goes to die</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:unboxed.github.com/newsletter" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/newsletter/">Blog</a></li>
+  <li><a href="/newsletter/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">News News News</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-08T17:48:00+02:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Tips for successful pair programming (Lee Richmond)</h2>
+
+<p><a href="https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming">https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming</a></p>
+
+<p>Lee wrote his first <a href="https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming">Unboxed blog post about pair programming</a>. I have paired myself with Lee and found his teqhnique working well and very useful. I especially liked the Pomodoro approach for timing. Nice one Lee!</p>
+
+<h2>Custom DNS tool that resolves wildcard DNS (Matt Pepperell)</h2>
+
+<p><a href="http://xip.io/">http://xip.io/</a></p>
+
+<p>e.g:</p>
+
+<pre><code>10.0.0.1.xip.io               resolves to   10.0.0.1
+something.10.0.0.1.xip.io     resolves to   10.0.0.1
+somethingelse.10.0.0.1.xip.io resolves to   10.0.0.1
+</code></pre>
+
+<p>There are some caveats though. <a href="http://news.ycombinator.com/item?id=4082017">http://news.ycombinator.com/item?id=4082017</a> has details but the tl;dr version is &#8220;Fine if you&#8217;re using it for webservices, probably not fine if you&#8217;re testing DNS itself&#8221;</p>
+
+<h2>HTML5 async (Joerg Diekmann)</h2>
+
+<p><a href="http://davidwalsh.name/html5-async">http://davidwalsh.name/html5-async</a></p>
+
+<p>HTML5 now supports both <em>defer</em> and <em>async</em> to load javascript source files. Both of these load JS scripts asynchronously. What you may ask does &#8220;asynchronous&#8221; mean? Well, let me enlighten…. Kidding. The difference between the two is that a script tags with <em>defer</em> will be guarantee to execute in order as they appear in your document, whereas <em>async</em> executes as soon as it is downloaded.</p>
+
+<h2>gmaps.js (Carl Whittaker)</h2>
+
+<p><a href="http://hpneo.github.com/gmaps/">http://hpneo.github.com/gmaps/</a></p>
+
+<p>Using the google maps api is a slog. gmaps.js hides the uglyness giving you a pretty straightforward api so you&#8217;re not forced to trawl those nasty google api docs.</p>
+
+<h2>Set flash in redirect_to (Joerg Diekmann)</h2>
+
+<p><a href="http://archives.ryandaigle.com/articles/2009/12/20/what-s-new-in-edge-rails-set-flash-in-redirect_to">http://archives.ryandaigle.com/articles/2009/12/20/what-s-new-in-edge-rails-set-flash-in-redirect_to</a></p>
+
+<p>Did you know - and please, I hope not everybody knows - that you can pass your flash message along with a redirect all in one sugary sweet line?
+I also discovered a technique I have longed for for a very long time: Passing a URL with the flash message.</p>
+
+<pre><code>redirect_to posts_path, :alert =&gt; "You cannot do that", :flash =&gt; { :url =&gt; post_path(@post) }
+</code></pre>
+
+<p>You can access the URL with <code>flash[:url]</code> … Obvious really. But elusive.</p>
+
+<h2>Upcoming JavaScript development related HTML5 features (Murray Steele)</h2>
+
+<p><a href="http://weblog.bocoup.com/third-party-javascript-development-future/">http://weblog.bocoup.com/third-party-javascript-development-future/</a></p>
+
+<p>A discussion on some upcoming features for html(5?) that relate to javascript development (mostly about scoping and security).  Despite the whimsical tone of the blog post, the author pretends to have visited the future and talks about how they use these features there all the time and are better for it, it&#8217;s a good overview of these features.</p>
+
+<h2>Greensock Animation Platform V12 now supports JavaScript (Robert Pataki)</h2>
+
+<p><a href="http://www.greensock.com/get-started-js/">http://www.greensock.com/get-started-js/</a></p>
+
+<p>Greensock has been the most handy and most powerful animation tool for ActionScript. V12 is out and yesssss, it supports JavaScript! Check out the project page, and try that banner demo, pretty impressive!</p>
+
+<p><a href="http://www.snorkl.tv/2012/05/banner-style-animation-with-greensock-powered-javascript/">http://www.snorkl.tv/2012/05/banner-style-animation-with-greensock-powered-javascript/</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Unboxed Developers</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-08T17:48:00+02:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/" data-via="ubxd" data-counturl="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/newsletter/blog/2012/06/01/news-of-the-week/" title="Previous Post: News of the week">&laquo; News of the week</a>
+      
+      
+        <a class="basic-alignment right" href="/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/" title="Next Post: The week the newsletter almost became purple">The week the newsletter almost became purple &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/">The week the newsletter almost became purple</a>
+      </li>
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/06/08/news-news-news/">News News News</a>
+      </li>
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/06/01/news-of-the-week/">News of the week</a>
+      </li>
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/05/25/the-week-of-winning/">The Week Of Winning</a>
+      </li>
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/05/18/the-week-that-was/">The week that was</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/unboxed">@unboxed</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'unboxed',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/newsletter/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ubxd", 4, false);
+    });
+  </script>
+  <script src="/newsletter/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/ubxd" class="twitter-follow-button" data-show-count="false">Follow @ubxd</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Unboxed Developers -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
