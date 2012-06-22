@@ -2,36 +2,40 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://unboxed.github.com/newsletter/blog/2012/05/11/the-week-in-links/</loc>
-        <lastmod>2012-05-18T15:36:42+02:00</lastmod>
+        <lastmod>2012-06-22T10:20:39+01:00</lastmod>
     </url>
     <url>
         <loc>http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was/</loc>
-        <lastmod>2012-05-25T15:55:33+02:00</lastmod>
+        <lastmod>2012-06-22T10:20:39+01:00</lastmod>
     </url>
     <url>
         <loc>http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning/</loc>
-        <lastmod>2012-05-25T16:14:49+02:00</lastmod>
+        <lastmod>2012-06-22T10:20:39+01:00</lastmod>
     </url>
     <url>
         <loc>http://unboxed.github.com/newsletter/blog/2012/06/01/news-of-the-week/</loc>
-        <lastmod>2012-06-15T16:39:59+02:00</lastmod>
+        <lastmod>2012-06-22T10:20:39+01:00</lastmod>
     </url>
     <url>
         <loc>http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/</loc>
-        <lastmod>2012-06-15T16:39:59+02:00</lastmod>
+        <lastmod>2012-06-22T10:20:39+01:00</lastmod>
     </url>
     <url>
         <loc>
             http://unboxed.github.com/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/
         </loc>
-        <lastmod>2012-06-15T16:39:59+02:00</lastmod>
+        <lastmod>2012-06-22T10:20:39+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://unboxed.github.com/newsletter/blog/2012/06/22/the-week-in-dev/</loc>
+        <lastmod>2012-06-22T16:28:09+01:00</lastmod>
     </url>
     <url>
         <loc>http://unboxed.github.com/newsletter/blog/archives/</loc>
-        <lastmod>2012-06-15T16:39:59+02:00</lastmod>
+        <lastmod>2012-06-22T16:28:09+01:00</lastmod>
     </url>
     <url>
         <loc>http://unboxed.github.com/newsletter/</loc>
-        <lastmod>2012-06-15T16:39:59+02:00</lastmod>
+        <lastmod>2012-06-22T16:28:09+01:00</lastmod>
     </url>
 </urlset>

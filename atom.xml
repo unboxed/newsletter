@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-06-15T16:44:28+02:00</updated>
+  <updated>2012-06-22T16:29:45+01:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -14,9 +14,77 @@
 
   
   <entry>
+    <title type="html"><![CDATA[The week in dev]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/06/22/the-week-in-dev/"/>
+    <updated>2012-06-22T11:15:00+01:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/06/22/the-week-in-dev</id>
+    <content type="html"><![CDATA[<p>This week&#8217;s tasty dev morsels for your delectation.</p>
+
+<h2>Removing config.threadsafe! (Leo)</h2>
+
+<p><a href="http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html">http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html</a></p>
+
+<p>Aaron Patterson (@tenderlove) wrote an excellent article on the debate around the config.threadsafe! option in Rails, taking the side of those who would want to see it enabled in production by default. I found it a very interesting overview of the current state of concurrency and multithreaded execution in Rails, and I guarantee that it will teach you something new about Rails.</p>
+
+<h2>RSpec&#8217;s new expectation syntax (Lee)</h2>
+
+<p><a href="http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax">http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax</a></p>
+
+<h2>/reFiddle+/ (Carl)</h2>
+
+<p><a href="http://refiddle.com/">http://refiddle.com/</a></p>
+
+<p>A fiddle tool for building and testing those tricky regex&#8217;s.</p>
+
+<h2>My algorithm for finding self-enumerating pangrams found its first solution after 250 CPU hours (Chris P)</h2>
+
+<p>This pangram was built by cpatuzzo and it has no more than nine a&#8217;s, three b&#8217;s, two c&#8217;s, three d&#8217;s, thirty-four e&#8217;s, five f&#8217;s, two g&#8217;s, twelve h&#8217;s, sixteen i&#8217;s, two j&#8217;s, one k, four l&#8217;s, three m&#8217;s, nineteen n&#8217;s, eleven o&#8217;s, three p&#8217;s, one q, thirteen r&#8217;s, thirty-six s&#8217;s, twenty-six t&#8217;s, six u&#8217;s, seven v&#8217;s, seven w&#8217;s, six x&#8217;s, five y&#8217;s and just three z&#8217;s.</p>
+
+<h3>How it works:</h3>
+
+<p>I turned the problem into error minimisation. Each attempt is an array of character frequencies, which is evaluated (using a lookup table) to determine the error magnitude. The &#8216;closest&#8217; solutions are selected for mutation. New attempts are ordered for evaluation according to the distribution of characters in the lookup table (language). The pool of attempts is pruned to ensure it doesn&#8217;t memory leak and slow everything down at the trade off of occasionally choosing a sub-optimal attempt for mutation. Very few sentence seeds actually have solutions, so there&#8217;s some code that randomises seeds on occasion.</p>
+
+<p>It&#8217;s slow and probably not so elegant, but it works. It also makes the naive assumption that attempts with fewer errors will be closer to a solution, which is probably a flawed assumption due to the volatility and chaos of the problem.</p>
+
+<p><a href="https://github.com/cpatuzzo/pangram">https://github.com/cpatuzzo/pangram</a>
+<a href="http://en.wikipedia.org/wiki/Pangram#Self-enumerating_pangrams">http://en.wikipedia.org/wiki/Pangram#Self-enumerating_pangrams</a></p>
+
+<h2>Parameter Chain (Chris P)</h2>
+
+<p>As some of you may know, I&#8217;ve been experimenting with finding a general solution to parameter chains in Ruby and chaining Arel scopes through collections. Some progress on both fronts by digging through ActiveRecord::Relation and Delegation. If anyone has insight, let me know. Thanks.</p>
+
+<p><a href="https://github.com/cpatuzzo/parameter_chain">https://github.com/cpatuzzo/parameter_chain</a>
+<a href="https://gist.github.com/2911869">https://gist.github.com/2911869</a></p>
+
+<h2>Talk to the Phone (Rich A)</h2>
+
+<p><a href="http://www.chromeexperiments.com/detail/talk-to-the-phone/">http://www.chromeexperiments.com/detail/talk-to-the-phone/</a></p>
+
+<p>Is your life a joyless void of malaise and depression?
+Need the comfort of human interaction but have no friends?
+Experience the delight of uttering those magical words: &#8216;I love you&#8217; into Chrome and receiving a response - any sort of response -  from your beloved browser.</p>
+
+<p>(Man alive, I should be in Marketing or something. I&#8217;m clearly a genius at this sort of stuff.)</p>
+
+<h2>CSS3 comedy (Matt P)</h2>
+
+<p>tr { transform: rotate(180deg); } It seems the tables have been turned.</p>
+
+<h2>A history of IE from version 1 to 9 (Matt P)</h2>
+
+<p><a href="http://www.techrepublic.com/photos/a-visual-history-of-internet-explorer-from-1-to-9/63758">http://www.techrepublic.com/photos/a-visual-history-of-internet-explorer-from-1-to-9/63758</a></p>
+
+<h2>FLAC.js (Matt P)</h2>
+
+<p>a fully Javascript-based FLAC decoder. 8.5% CPU usage on a Core 2 Duo. Crazy.
+<a href="http://tumblr.dave.io/post/25228910532/flac-js-a-fully-javascript-based-flac-decoder">http://tumblr.dave.io/post/25228910532/flac-js-a-fully-javascript-based-flac-decoder</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[The week the newsletter almost became purple]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/"/>
-    <updated>2012-06-15T15:44:00+02:00</updated>
+    <updated>2012-06-15T15:44:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple</id>
     <content type="html"><![CDATA[<p>First things first: Bender, our lovely campfire bot, now knows how to choose a newsletter author. It works on top of the existing lists api and removes you once you&#8217;ve been chosen. I think it&#8217;s time he made an appearance in the dev chat room&#8230;</p>
 
@@ -88,7 +156,7 @@
   <entry>
     <title type="html"><![CDATA[News News News]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/"/>
-    <updated>2012-06-08T17:48:00+02:00</updated>
+    <updated>2012-06-08T17:48:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news</id>
     <content type="html"><![CDATA[<h2>Tips for successful pair programming (Lee Richmond)</h2>
 
@@ -152,7 +220,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
   <entry>
     <title type="html"><![CDATA[News of the week]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/01/news-of-the-week/"/>
-    <updated>2012-06-01T15:22:00+02:00</updated>
+    <updated>2012-06-01T15:22:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/01/news-of-the-week</id>
     <content type="html"><![CDATA[<h2>MS-provided IE testing VMs (Muz)</h2>
 
@@ -289,7 +357,7 @@ This is a very interesting new approach if you think about it, that&#8217;s prob
   <entry>
     <title type="html"><![CDATA[The Week Of Winning]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning/"/>
-    <updated>2012-05-25T15:00:00+02:00</updated>
+    <updated>2012-05-25T15:00:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning</id>
     <content type="html"><![CDATA[<p>This weeks instalment is awesome, mainly due to the lack of content from its author. Enjoy!</p>
 
@@ -377,7 +445,7 @@ I only found out about it today, looks like it could be interesting.</p>
   <entry>
     <title type="html"><![CDATA[The week that was]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was/"/>
-    <updated>2012-05-18T14:00:00+02:00</updated>
+    <updated>2012-05-18T14:00:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was</id>
     <content type="html"><![CDATA[<p>Welcome to this weeks installment. @jpawlyn submits for your consideration the following tasty crumpets from the land of tech.</p>
 
@@ -498,7 +566,7 @@ Harnessing the power of the elements for the purpose of monitoring is a brillian
   <entry>
     <title type="html"><![CDATA[The week in links]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/05/11/the-week-in-links/"/>
-    <updated>2012-05-11T15:46:00+02:00</updated>
+    <updated>2012-05-11T15:46:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/05/11/the-week-in-links</id>
     <content type="html"><![CDATA[<p>Welcome to this weeks installment. I - your humble guest editor, Luke R. - submit for your consideration the following lovingly curated selection of internets.</p>
 

@@ -9,7 +9,7 @@
   <meta name="author" content="Unboxed Developers">
 
   
-  <meta name="description" content="First things first: Bender, our lovely campfire bot, now knows how to choose a newsletter author. It works on top of the existing lists api and &hellip;">
+  <meta name="description" content="This week&#8217;s tasty dev morsels for your delectation. Removing config.threadsafe! (Leo) http://tenderlovemaking.com/2012/06/18/removing-config- &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,11 +19,11 @@
 
   
   <link rel="canonical" href="http://unboxed.github.com/newsletter">
-  <link href="/newsletter/favicon.png" rel="icon">
-  <link href="/newsletter/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/newsletter/javascripts/modernizr-2.0.js"></script>
-  <script src="/newsletter/javascripts/ender.js"></script>
-  <script src="/newsletter/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
   <link href="/atom.xml" rel="alternate" title="Unboxed Developer Newsletter" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/newsletter/">Unboxed Developer Newsletter</a></h1>
+  <h1><a href="/">Unboxed Developer Newsletter</a></h1>
   
     <h2>Where awesome goes to die</h2>
   
@@ -55,8 +55,8 @@
 </form>
   
 <ul class="main-navigation">
-  <li><a href="/newsletter/">Blog</a></li>
-  <li><a href="/newsletter/blog/archives">Archives</a></li>
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
 </ul>
 
 </nav>
@@ -70,7 +70,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/">The Week the Newsletter Almost Became Purple</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/06/22/the-week-in-dev/">The Week in Dev</a></h1>
     
     
       <p class="meta">
@@ -86,7 +86,102 @@
   
 
 
-<time datetime="2012-06-15T15:44:00+02:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
+<time datetime="2012-06-22T11:15:00+01:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This week&#8217;s tasty dev morsels for your delectation.</p>
+
+<h2>Removing config.threadsafe! (Leo)</h2>
+
+<p><a href="http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html">http://tenderlovemaking.com/2012/06/18/removing-config-threadsafe.html</a></p>
+
+<p>Aaron Patterson (@tenderlove) wrote an excellent article on the debate around the config.threadsafe! option in Rails, taking the side of those who would want to see it enabled in production by default. I found it a very interesting overview of the current state of concurrency and multithreaded execution in Rails, and I guarantee that it will teach you something new about Rails.</p>
+
+<h2>RSpec&#8217;s new expectation syntax (Lee)</h2>
+
+<p><a href="http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax">http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax</a></p>
+
+<h2>/reFiddle+/ (Carl)</h2>
+
+<p><a href="http://refiddle.com/">http://refiddle.com/</a></p>
+
+<p>A fiddle tool for building and testing those tricky regex&#8217;s.</p>
+
+<h2>My algorithm for finding self-enumerating pangrams found its first solution after 250 CPU hours (Chris P)</h2>
+
+<p>This pangram was built by cpatuzzo and it has no more than nine a&#8217;s, three b&#8217;s, two c&#8217;s, three d&#8217;s, thirty-four e&#8217;s, five f&#8217;s, two g&#8217;s, twelve h&#8217;s, sixteen i&#8217;s, two j&#8217;s, one k, four l&#8217;s, three m&#8217;s, nineteen n&#8217;s, eleven o&#8217;s, three p&#8217;s, one q, thirteen r&#8217;s, thirty-six s&#8217;s, twenty-six t&#8217;s, six u&#8217;s, seven v&#8217;s, seven w&#8217;s, six x&#8217;s, five y&#8217;s and just three z&#8217;s.</p>
+
+<h3>How it works:</h3>
+
+<p>I turned the problem into error minimisation. Each attempt is an array of character frequencies, which is evaluated (using a lookup table) to determine the error magnitude. The &#8216;closest&#8217; solutions are selected for mutation. New attempts are ordered for evaluation according to the distribution of characters in the lookup table (language). The pool of attempts is pruned to ensure it doesn&#8217;t memory leak and slow everything down at the trade off of occasionally choosing a sub-optimal attempt for mutation. Very few sentence seeds actually have solutions, so there&#8217;s some code that randomises seeds on occasion.</p>
+
+<p>It&#8217;s slow and probably not so elegant, but it works. It also makes the naive assumption that attempts with fewer errors will be closer to a solution, which is probably a flawed assumption due to the volatility and chaos of the problem.</p>
+
+<p><a href="https://github.com/cpatuzzo/pangram">https://github.com/cpatuzzo/pangram</a>
+<a href="http://en.wikipedia.org/wiki/Pangram#Self-enumerating_pangrams">http://en.wikipedia.org/wiki/Pangram#Self-enumerating_pangrams</a></p>
+
+<h2>Parameter Chain (Chris P)</h2>
+
+<p>As some of you may know, I&#8217;ve been experimenting with finding a general solution to parameter chains in Ruby and chaining Arel scopes through collections. Some progress on both fronts by digging through ActiveRecord::Relation and Delegation. If anyone has insight, let me know. Thanks.</p>
+
+<p><a href="https://github.com/cpatuzzo/parameter_chain">https://github.com/cpatuzzo/parameter_chain</a>
+<a href="https://gist.github.com/2911869">https://gist.github.com/2911869</a></p>
+
+<h2>Talk to the Phone (Rich A)</h2>
+
+<p><a href="http://www.chromeexperiments.com/detail/talk-to-the-phone/">http://www.chromeexperiments.com/detail/talk-to-the-phone/</a></p>
+
+<p>Is your life a joyless void of malaise and depression?
+Need the comfort of human interaction but have no friends?
+Experience the delight of uttering those magical words: &#8216;I love you&#8217; into Chrome and receiving a response - any sort of response -  from your beloved browser.</p>
+
+<p>(Man alive, I should be in Marketing or something. I&#8217;m clearly a genius at this sort of stuff.)</p>
+
+<h2>CSS3 comedy (Matt P)</h2>
+
+<p>tr { transform: rotate(180deg); } It seems the tables have been turned.</p>
+
+<h2>A history of IE from version 1 to 9 (Matt P)</h2>
+
+<p><a href="http://www.techrepublic.com/photos/a-visual-history-of-internet-explorer-from-1-to-9/63758">http://www.techrepublic.com/photos/a-visual-history-of-internet-explorer-from-1-to-9/63758</a></p>
+
+<h2>FLAC.js (Matt P)</h2>
+
+<p>a fully Javascript-based FLAC decoder. 8.5% CPU usage on a Core 2 Duo. Crazy.
+<a href="http://tumblr.dave.io/post/25228910532/flac-js-a-fully-javascript-based-flac-decoder">http://tumblr.dave.io/post/25228910532/flac-js-a-fully-javascript-based-flac-decoder</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/">The Week the Newsletter Almost Became Purple</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-15T15:44:00+01:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
         
       </p>
     
@@ -169,7 +264,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/06/08/news-news-news/">News News News</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/06/08/news-news-news/">News News News</a></h1>
     
     
       <p class="meta">
@@ -185,7 +280,7 @@
   
 
 
-<time datetime="2012-06-08T17:48:00+02:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
+<time datetime="2012-06-08T17:48:00+01:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
         
       </p>
     
@@ -260,7 +355,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
       
   <header>
     
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/06/01/news-of-the-week/">News of the Week</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/06/01/news-of-the-week/">News of the Week</a></h1>
     
     
       <p class="meta">
@@ -276,7 +371,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
   
 
 
-<time datetime="2012-06-01T15:22:00+02:00" pubdate data-updated="true">Jun 1<span>st</span>, 2012</time>
+<time datetime="2012-06-01T15:22:00+01:00" pubdate data-updated="true">Jun 1<span>st</span>, 2012</time>
         
       </p>
     
@@ -424,7 +519,7 @@ This is a very interesting new approach if you think about it, that&#8217;s prob
       
   <header>
     
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/05/25/the-week-of-winning/">The Week of Winning</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/05/25/the-week-of-winning/">The Week of Winning</a></h1>
     
     
       <p class="meta">
@@ -440,7 +535,7 @@ This is a very interesting new approach if you think about it, that&#8217;s prob
   
 
 
-<time datetime="2012-05-25T15:00:00+02:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
+<time datetime="2012-05-25T15:00:00+01:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
         
       </p>
     
@@ -539,7 +634,7 @@ I only found out about it today, looks like it could be interesting.</p>
       
   <header>
     
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/05/18/the-week-that-was/">The Week That Was</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/05/18/the-week-that-was/">The Week That Was</a></h1>
     
     
       <p class="meta">
@@ -555,7 +650,7 @@ I only found out about it today, looks like it could be interesting.</p>
   
 
 
-<time datetime="2012-05-18T14:00:00+02:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
+<time datetime="2012-05-18T14:00:00+01:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
         
       </p>
     
@@ -687,7 +782,7 @@ Harnessing the power of the elements for the purpose of monitoring is a brillian
       
   <header>
     
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/05/11/the-week-in-links/">The Week in Links</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/05/11/the-week-in-links/">The Week in Links</a></h1>
     
     
       <p class="meta">
@@ -703,7 +798,7 @@ Harnessing the power of the elements for the purpose of monitoring is a brillian
   
 
 
-<time datetime="2012-05-11T15:46:00+02:00" pubdate data-updated="true">May 11<span>th</span>, 2012</time>
+<time datetime="2012-05-11T15:46:00+01:00" pubdate data-updated="true">May 11<span>th</span>, 2012</time>
         
       </p>
     
@@ -840,7 +935,7 @@ keyword: gem
   
   <div class="pagination">
     
-    <a href="/newsletter/blog/archives">Blog Archives</a>
+    <a href="/blog/archives">Blog Archives</a>
     
   </div>
 </div>
@@ -851,23 +946,23 @@ keyword: gem
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/">The week the newsletter almost became purple</a>
+        <a href="/blog/2012/06/22/the-week-in-dev/">The week in dev</a>
       </li>
     
       <li class="post">
-        <a href="/newsletter/blog/2012/06/08/news-news-news/">News News News</a>
+        <a href="/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/">The week the newsletter almost became purple</a>
       </li>
     
       <li class="post">
-        <a href="/newsletter/blog/2012/06/01/news-of-the-week/">News of the week</a>
+        <a href="/blog/2012/06/08/news-news-news/">News News News</a>
       </li>
     
       <li class="post">
-        <a href="/newsletter/blog/2012/05/25/the-week-of-winning/">The Week Of Winning</a>
+        <a href="/blog/2012/06/01/news-of-the-week/">News of the week</a>
       </li>
     
       <li class="post">
-        <a href="/newsletter/blog/2012/05/18/the-week-that-was/">The week that was</a>
+        <a href="/blog/2012/05/25/the-week-of-winning/">The Week Of Winning</a>
       </li>
     
   </ul>
@@ -899,7 +994,7 @@ keyword: gem
         });
     });
   </script>
-  <script src="/newsletter/javascripts/github.js" type="text/javascript"> </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -913,7 +1008,7 @@ keyword: gem
       getTwitterFeed("ubxd", 4, false);
     });
   </script>
-  <script src="/newsletter/javascripts/twitter.js" type="text/javascript"> </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
   
     <a href="http://twitter.com/ubxd" class="twitter-follow-button" data-show-count="false">Follow @ubxd</a>
   
