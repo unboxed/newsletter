@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-06-22T16:33:31+01:00</updated>
+  <updated>2012-06-29T14:52:09+01:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -12,6 +12,93 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ALL the dev things]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/06/29/new-post/"/>
+    <updated>2012-06-29T13:59:00+01:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/06/29/new-post</id>
+    <content type="html"><![CDATA[<p>[Enter food-related obligatory dev-newsletter pun here].</p>
+
+<h2><a href="http://tinypng.org/">TinyPNG</a> (via Lee)</h2>
+
+<p>Advanced lossy compression for PNG images that preserves full alpha transparency.</p>
+
+<h2><a href="http://www.placekitten.com/">PlaceKitten</a> (via Alan)</h2>
+
+<p>Technically submitted by Alan, but credit goes partially to Matt P for submitting this two weeks ago.</p>
+
+<p>Quote from last time this was submitted: &#8220;Stock images of kittens, sizeable to whatever size you can need. Useful when mocking up a site. Like the lorem ipsum, but with images.&#8221;</p>
+
+<h2><a href="http://mir.aculo.us/2012/06/26/flowchart-how-to-retinafy-your-website/">Flowchart: How to Retinafy Your Website</a> (via Ben)</h2>
+
+<p>With Retina screens all around us, it’s time to take the plunge and retinafy your website or webapp.</p>
+
+<h2><a href="http://www.wired.com/beyond_the_beyond/2012/06/turing-centenary-speech-new-aesthetic/">Turing Centenary Speech (New Aesthetic)</a> (via Ben)</h2>
+
+<p>Self explanatory really - have a read.</p>
+
+<h2><a href="https://lh5.googleusercontent.com/-qhOrCA0YOcs/T88ahvVjlpI/AAAAAAAAGYY/nqntKXC9fic/s372/92.gif">ActiveRecord Niceness</a> (via Joerg)</h2>
+
+<p>Here&#8217;s a thing I never knew about ActiveRecord, and not sure when it slipped in: So - imagine you have the following setup:</p>
+
+<pre><code>class Contact &lt; ActiveRecord::Base
+  has_many :addresses
+end
+
+class Address &lt; ActiveRecord::Base
+  belongs_to :contact
+end
+</code></pre>
+
+<p>Then, contact.address_ids gives you an array of ids of all your addresses.</p>
+
+<h2><a href="https://lh3.googleusercontent.com/-oBx-Gxby-dY/T5UaoPTtouI/AAAAAAAAGO8/P3Vlsxgi_9A/s500/84.gif">SQL Binding</a> (via Jolyon)</h2>
+
+<p>I was convinced writing sql (or sequel) to use bind variables must be better than hardcoding from a performance perspective but my confidence was shaken when reading about <a href="http://patshaughnessy.net/2011/10/22/show-some-love-for-prepared-statements-in-rails-3-1">prepared statements</a>.
+Mind you, from a sql injection and readability perspective, I think binding remains preferable.</p>
+
+<h2><a href="http://destroyallsoftware.com">Destroy All Software</a> (via Attila)</h2>
+
+<p>Most of us like RailsCasts, right? OK, screencasts are great to demonstrate and teach people about programming. Now, it became clear to me that not everybody knows about the website in subject. It features short (10-15 mins long) very focused technical screencasts, most of the time related to Ruby (although sometimes it covers Python and other related techness as well). Some of the most interesting things DAS covered in the past:</p>
+
+<ul>
+<li>How to implement RSpec from scratch</li>
+<li>How and why to avoid nil</li>
+<li>Pretty git logs</li>
+<li>etc.</li>
+</ul>
+
+
+<p>The catalog contains about 70 screencasts as of now. All I can say is that it became one of my favourite sources to learn more about software architecture, more specifically about how to do advanced things in Ruby. This guy is extremely clever, very opinionated yet reasonable. Very good material, definitely worths the subscription. (Yeah it&#8217;s not free but I think it&#8217;s reasonably priced.)</p>
+
+<p>You should also watch <a href="https://www.destroyallsoftware.com/talks/wat/">this lightning talk</a> by the same guy if you haven&#8217;t seen it yet, very entertaining.</p>
+
+<h2><a href="https://lh4.googleusercontent.com/-WoHQ-j8FqCI/T5Ubj2T3BpI/AAAAAAAAGPw/FlhFIFS845A/s324/81.gif">Rails 4.0 Sneak Peek: Queueing</a> (via Attila)</h2>
+
+<p><a href="http://reefpoints.dockyard.com/ruby/2012/06/25/rails-4-sneak-peek-queueing.html">Seen this?</a></p>
+
+<h2><a href="http://blog.jquery.com/2012/06/28/jquery-core-version-1-9-and-beyond/">JQuery 2.0</a> (via Robert P)</h2>
+
+<p>JQuery 2.0 is coming early 2013. One of the highlights ahead is that they will remove all support for IE6/7/8 browsers.</p>
+
+<h2><a href="http://jqvmap.com/">jQuery Vector Maps using SVG</a> (via Robert P)</h2>
+
+<p>Not as great as GMaps, but much lighter and it actually looks all right. Supports Explorer 6-8 using VML.</p>
+
+<h2><a href="http://darcyclarke.me/dev/repojs/">Repo.js</a> (via Robert P)</h2>
+
+<p>If you ever wanted to include github repos on your site&#8230;</p>
+
+<h2><a href="http://37signals.com/svn/posts/3191-announcing-pow-040-with-xipio-support">Pow 0.4.0 with xip.io support</a> (via Attila)</h2>
+
+<p>Did anybody try this out? I would love to know if anybody has done something with this.</p>
+
+<h2><a href="http://www.apple.com/ios/ios6/">iOS 6 Beta Updates</a> (via Attila)</h2>
+
+<p>If you have installed the beta on your phone as soon as Apple made it available to the iOS devs, you may want to update your software on your phone. Funnily enough iTunes won&#8217;t do this for you (I guess it does not intend to handle beta upgrades) but your phone can upgrade itself. Go to <code>Settings -&gt; General -&gt; Software Update</code> and voila! Just a heads up.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The week in dev]]></title>
