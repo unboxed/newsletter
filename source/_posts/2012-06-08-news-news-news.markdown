@@ -12,7 +12,7 @@ categories:
 Lee wrote his first [Unboxed blog post about pair programming](https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming). I have paired myself with Lee and found his teqhnique working well and very useful. I especially liked the Pomodoro approach for timing. Nice one Lee!
 
 
-##Custom DNS tool that resolves wildcard DNS (Matt Pepperell)
+##Custom DNS tool that resolves wildcard DNS (Matt Peperell)
 [http://xip.io/](http://xip.io/)
 
 e.g:
