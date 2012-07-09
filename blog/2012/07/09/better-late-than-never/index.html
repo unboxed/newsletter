@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>News News News - Unboxed Developer Newsletter</title>
+  <title>Better Late Than Never - Unboxed Developer Newsletter</title>
   <meta name="author" content="Unboxed Developers">
 
   
-  <meta name="description" content="Tips for successful pair programming (Lee Richmond) https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming Lee wrote his first &hellip;">
+  <meta name="description" content="jQuery - Use it but don&#8217;t host it! (Matt P) Don&#8217;t copy jQuery onto your website - let Google host it for you. Here are 3 reasons why: &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news">
+  <link rel="canonical" href="http://unboxed.github.com/newsletter/blog/2012/07/09/better-late-than-never">
   <link href="/newsletter/favicon.png" rel="icon">
   <link href="/newsletter/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/newsletter/javascripts/modernizr-2.0.js"></script>
@@ -67,7 +67,7 @@
   
   <header>
     
-      <h1 class="entry-title">News News News</h1>
+      <h1 class="entry-title">Better Late Than Never</h1>
     
     
       <p class="meta">
@@ -83,69 +83,81 @@
   
 
 
-<time datetime="2012-06-08T17:48:00+01:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
+<time datetime="2012-07-09T14:15:00+01:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>Tips for successful pair programming (Lee Richmond)</h2>
+<div class="entry-content"><h2>jQuery - Use it but don&#8217;t host it! (Matt P)</h2>
 
-<p><a href="https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming">https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming</a></p>
+<p>Don&#8217;t copy jQuery onto your website - let Google host it for you.  Here are 3 reasons why:
+<a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/">http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/</a></p>
 
-<p>Lee wrote his first <a href="https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming">Unboxed blog post about pair programming</a>. I have paired myself with Lee and found his teqhnique working well and very useful. I especially liked the Pomodoro approach for timing. Nice one Lee!</p>
+<h2>Dooms<s>day</s>weekend (Matt P)</h2>
 
-<h2>Custom DNS tool that resolves wildcard DNS (Matt Pepperell)</h2>
+<p>Last weekend there were huge outages on various parts of the internet. Two primary causes, independent of one another, were responsible.</p>
 
-<p><a href="http://xip.io/">http://xip.io/</a></p>
+<h1>Issue 1:</h1>
 
-<p>e.g:</p>
+<p>the Leap Second which happened at 23:59:60 June 30th caused lockup or load to skyrocket in a large number of Linux machines.  This caused a few of our machines to keel over, but was also quite a wide-impacting bug; companies affected include Twitter, LinkedIn, AWS, Pinterest, Instagram, Stumbleon and Reddit. For those who care, technical information (including Kernel internals) can be found at
+<a href="http://serverfault.com/questions/403732/anyone-else-experiencing-high-rates-of-linux-server-crashes-during-a-leap-second">http://serverfault.com/questions/403732/anyone-else-experiencing-high-rates-of-linux-server-crashes-during-a-leap-second</a></p>
 
-<pre><code>10.0.0.1.xip.io               resolves to   10.0.0.1
-something.10.0.0.1.xip.io     resolves to   10.0.0.1
-somethingelse.10.0.0.1.xip.io resolves to   10.0.0.1
-</code></pre>
+<h1>Issue 2:</h1>
 
-<p>There are some caveats though. <a href="http://news.ycombinator.com/item?id=4082017">http://news.ycombinator.com/item?id=4082017</a> has details but the tl;dr version is &#8220;Fine if you&#8217;re using it for webservices, probably not fine if you&#8217;re testing DNS itself&#8221;</p>
+<p>Power issues in the Amazon Cloud meant that one of their 10% availability zones failed. Dramatically.  Full details at <a href="http://aws.amazon.com/message/67457/">http://aws.amazon.com/message/67457/</a></p>
 
-<h2>HTML5 async (Joerg Diekmann)</h2>
+<h2>It&#8217;s time for Skype (Rob P)</h2>
 
-<p><a href="http://davidwalsh.name/html5-async">http://davidwalsh.name/html5-async</a></p>
+<p>A very nice Skype microsite by B-Reel. I love the user interaction bits and bobs! Lovely, seamless animations and sexy interactive demos.
+One thing about the site is Facebook connect: it has absolutely no benefit to the user, only some fetched-in images, and you can facebook-mail your friends about the website (hurraay), that&#8217;s fantastic, NOT.</p>
 
-<p>HTML5 now supports both <em>defer</em> and <em>async</em> to load javascript source files. Both of these load JS scripts asynchronously. What you may ask does &#8220;asynchronous&#8221; mean? Well, let me enlighten…. Kidding. The difference between the two is that a script tags with <em>defer</em> will be guarantee to execute in order as they appear in your document, whereas <em>async</em> executes as soon as it is downloaded.</p>
+<p><a href="http://itstimefor.skype.com">http://itstimefor.skype.com</a></p>
 
-<h2>gmaps.js (Carl Whittaker)</h2>
+<h2>Try Git In Your Browser (Seb)</h2>
 
-<p><a href="http://hpneo.github.com/gmaps/">http://hpneo.github.com/gmaps/</a></p>
+<p>Last week Github launched their CodeSchool style service for teaching people Git.
+<a href="http://try.github.com">http://try.github.com</a></p>
 
-<p>Using the google maps api is a slog. gmaps.js hides the uglyness giving you a pretty straightforward api so you&#8217;re not forced to trawl those nasty google api docs.</p>
+<h2>CocoaPods (Seb)</h2>
 
-<h2>Set flash in redirect_to (Joerg Diekmann)</h2>
+<p>I have recently been playing around with iOS, and came across a package dependency manager for Cocoa, no longer do you have to deal with linking external libaries with your xcode project.</p>
 
-<p><a href="http://archives.ryandaigle.com/articles/2009/12/20/what-s-new-in-edge-rails-set-flash-in-redirect_to">http://archives.ryandaigle.com/articles/2009/12/20/what-s-new-in-edge-rails-set-flash-in-redirect_to</a></p>
+<p><a href="http://cocoapods.org/#get_started">http://cocoapods.org/#get_started</a></p>
 
-<p>Did you know - and please, I hope not everybody knows - that you can pass your flash message along with a redirect all in one sugary sweet line?
-I also discovered a technique I have longed for for a very long time: Passing a URL with the flash message.</p>
+<p>anyone fancy updating iCuke and packing it up as a CocoaPod?</p>
 
-<pre><code>redirect_to posts_path, :alert =&gt; "You cannot do that", :flash =&gt; { :url =&gt; post_path(@post) }
-</code></pre>
+<p><a href="https://github.com/unboxed/icuke">https://github.com/unboxed/icuke</a></p>
 
-<p>You can access the URL with <code>flash[:url]</code> … Obvious really. But elusive.</p>
+<h2>Hatchet (Joerg)</h2>
 
-<h2>Upcoming JavaScript development related HTML5 features (Murray Steele)</h2>
+<p>We are extremely excited to share a new product with you:</p>
 
-<p><a href="http://weblog.bocoup.com/third-party-javascript-development-future/">http://weblog.bocoup.com/third-party-javascript-development-future/</a></p>
+<p><a href="https://hatchetapp.net">hatchetapp.net</a></p>
 
-<p>A discussion on some upcoming features for html(5?) that relate to javascript development (mostly about scoping and security).  Despite the whimsical tone of the blog post, the author pretends to have visited the future and talks about how they use these features there all the time and are better for it, it&#8217;s a good overview of these features.</p>
+<p>Hatchet is an online planning poker app - yes, another one - a speciality of our little purple company it seems. Myself and Rich A tenderly developed it in the last two weeks. It makes use of Nodejs, Angularjs, Socket.io, Bootstrap, and responsive design. All kinds of good stuff, basically.</p>
 
-<h2>Greensock Animation Platform V12 now supports JavaScript (Robert Pataki)</h2>
+<p>Please send us any feedback to make this thing so badass so that you will want to use it at your next planning session, and also would want to tell your partners about it.</p>
 
-<p><a href="http://www.greensock.com/get-started-js/">http://www.greensock.com/get-started-js/</a></p>
+<p>Be kind - Hatchet is currently in beta of course, and any feedback you could send us would be greatly appreciated.</p>
 
-<p>Greensock has been the most handy and most powerful animation tool for ActionScript. V12 is out and yesssss, it supports JavaScript! Check out the project page, and try that banner demo, pretty impressive!</p>
+<h2>Stasis (Seb)</h2>
 
-<p><a href="http://www.snorkl.tv/2012/05/banner-style-animation-with-greensock-powered-javascript/">http://www.snorkl.tv/2012/05/banner-style-animation-with-greensock-powered-javascript/</a></p>
+<p>I came across this the other day, it&#8217;s a ruby framework for serving static content.</p>
+
+<p><a href="http://stasis.me/">stasis.me</a></p>
+
+<h2>Music Hackday(Barcelona) - A late update(Seb)</h2>
+
+<p>This was my second music hackday, and unlike the back in March, I actually presented something.
+Here&#8217;s a list of the hacks
+<a href="http://wiki.musichackday.org/index.php?title=Barcelona_Hacks_2012">wiki.musichackday.org/index.php?title=Barcelona_Hacks_2012</a></p>
+
+<p>If you want to hear me talking about my hack you can hear me on this bbc podcast, 10 minutes in.
+<a href="http://downloads.bbc.co.uk/podcasts/fivelive/pods/pods_20120619-0515a.mp3">BBC Outriders Podcast</a></p>
+
+<p>There are 3 upcoming hackdays which are soon to be revealed, will let you know more when more details are available.</p>
 </div>
 
 
@@ -168,7 +180,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
   
 
 
-<time datetime="2012-06-08T17:48:00+01:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
+<time datetime="2012-07-09T14:15:00+01:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
       
 
 
@@ -176,7 +188,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/" data-via="ubxd" data-counturl="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://unboxed.github.com/newsletter/blog/2012/07/09/better-late-than-never/" data-via="ubxd" data-counturl="http://unboxed.github.com/newsletter/blog/2012/07/09/better-late-than-never/" >Tweet</a>
   
   
   
@@ -185,10 +197,8 @@ I also discovered a technique I have longed for for a very long time: Passing a 
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/newsletter/blog/2012/06/01/news-of-the-week/" title="Previous Post: News of the week">&laquo; News of the week</a>
+        <a class="basic-alignment left" href="/newsletter/blog/2012/06/29/new-post/" title="Previous Post: ALL the dev things">&laquo; ALL the dev things</a>
       
-      
-        <a class="basic-alignment right" href="/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/" title="Next Post: The week the newsletter almost became purple">The week the newsletter almost became purple &raquo;</a>
       
     </p>
   </footer>
