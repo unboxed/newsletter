@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-07-09T15:07:39+01:00</updated>
+  <updated>2012-07-13T14:33:16+01:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -12,6 +12,93 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Can you digg it?]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/07/13/can-you-digg-it/"/>
+    <updated>2012-07-13T13:37:00+01:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/07/13/can-you-digg-it</id>
+    <content type="html"><![CDATA[<p>Are you ready for this week&#8217;s feature filled fiasco? I know I am! So fasten your seat belts, tie your hair back and prepare for an emotional roller coaster of developer developments.</p>
+
+<h2>Diggsaster (Chris P)</h2>
+
+<p>Digg sells for half a million dollars (reportedly). They should have cashed in on the $200 million Google offered them in 2008.</p>
+
+<p><a href="http://gizmodo.com/5925586/digg-sells-itself-for-pathetic-pocketchange-500000">http://gizmodo.com/5925586/digg-sells-itself-for-pathetic-pocketchange-500000</a></p>
+
+<h2>Clandestine communication (Chris P)</h2>
+
+<p>&#8220;I bumped into a raggedy dressed man as we got on [the subway] and he shot me a quick smile. I [thought] nothing of it until he went to get off at 14th street and he handed me a $50 bill along with a note. Before I could even open my mouth to ask him a question, he was gone.&#8221;</p>
+
+<p><a href="http://mashable.com/2012/07/11/reddit-subway-code">http://mashable.com/2012/07/11/reddit-subway-code</a></p>
+
+<h2>Bender, bend to my will (Chris P)</h2>
+
+<p>Our friendly campfire bot has been misbehaving this week. I wrote some (hacky) code that allows arbitrary chunks of ruby to evaluated. This has led to a very noisy developer room (apologies for that).</p>
+
+<p>If you&#8217;re interested in how this works, or would like to get an idea of how to add new actions to our bot, this commit might be of interest.</p>
+
+<p><a href="https://github.com/unboxed/unbot/commit/3f008d232b4330a0bbff9414d64f291884c540cf">https://github.com/unboxed/unbot/commit/3f008d232b4330a0bbff9414d64f291884c540cf</a></p>
+
+<h2>Retinafying websites (Murray)</h2>
+
+<p>A flowchart about how to retinafy websites (not just images). Seems comprehensive and probably useful.</p>
+
+<p><a href="http://mir.aculo.us/2012/06/26/flowchart-how-to-retinafy-your-website/">http://mir.aculo.us/2012/06/26/flowchart-how-to-retinafy-your-website/</a></p>
+
+<h2>Audio Experimentation (Robert F)</h2>
+
+<p>I&#8217;ve been dabbling in low level audio processing for iOS and stumbled upon this: <a href="https://github.com/alexbw/novocaine">https://github.com/alexbw/novocaine</a></p>
+
+<p>It&#8217;s a wrapper around Audio Unit Hosting using Core Audio. Essentially, it makes getting raw audio from the microphone simple and FAST!</p>
+
+<p>Also, I&#8217;ve been very prolific with regards to speaking at events recently, so I have two slid decks to punt.</p>
+
+<p>A story about the ethos of Resque and when to use it:  <a href="http://robertfall.com/blog/2012/07/11/Resque-The-Journey.html">http://robertfall.com/blog/2012/07/11/Resque-The-Journey.html</a></p>
+
+<p>As well as:</p>
+
+<p>iOS Web Apps and how to make them look native: <a href="http://robertfall.com/blog/2012/07/02/iOS-Web-Apps-The-Journey.html">http://robertfall.com/blog/2012/07/02/iOS-Web-Apps-The-Journey.html</a></p>
+
+<p>You&#8217;ll see common thread between the two talks. Perhaps I should expand it into a series of &#8220;The Journey&#8221;.</p>
+
+<p>Another thing: <a href="https://github.com/petejkim/underscore.objc/">https://github.com/petejkim/underscore.objc/</a></p>
+
+<p>It&#8217;s a port of the underscore.js library to Obj-C. It&#8217;s particularly useful in iOS development where you have to do almost everything by hand.</p>
+
+<h2>HTML5 Sortable (Robert P)</h2>
+
+<p><a href="https://github.com/farhadi/html5sortable">https://github.com/farhadi/html5sortable</a></p>
+
+<p>Nice and easy to use sorting jQuery plugin with IE8 support</p>
+
+<h2>Bootstrap Tour (Robert P)</h2>
+
+<p><a href="https://github.com/pushly/bootstrap-tour">https://github.com/pushly/bootstrap-tour</a></p>
+
+<p>With some nice animations it could be very powerful and useful - even for cookie notifications.</p>
+
+<h2>CSS Transforms and IndexedDB unprefixed in Firefox (Robert P)</h2>
+
+<p>The unprefixing starts and it&#8217;s great, because it means that the css3 transform implementations are now in a final stage. They also removed the prefix from indexedDB, which is quite cool and shows that they want to stick with it..</p>
+
+<p><a href="http://paulrouget.com/e/transformsunprefixed/">http://paulrouget.com/e/transformsunprefixed/</a></p>
+
+<h2>Adobe Shadow (Robert P)</h2>
+
+<p>This is another tool from Adobe (boo), which actually makes sense. Download the app, get the iPhone (or Android) app and the Chrome extension. The apps make a bridge across your phone and the computer and whatever you&#8217;re browsing in Chrome you instantly see it on your phone. Very promising stuff if you&#8217;re into mobile optimisation and responsive testing.</p>
+
+<p><a href="http://labs.adobe.com/technologies/shadow/">http://labs.adobe.com/technologies/shadow/</a></p>
+
+<h2>Developer Day (Chris P)</h2>
+
+<p>I&#8217;m writing this before it&#8217;s started, so not really sure what will happen. Check back here tomorrow and I might have updated this.</p>
+
+<h2>That&#8217;s it&#8230;</h2>
+
+<p>Not the longest newsletter this week, probably due to this developer day. Have a great weekend guys.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Better Late Than Never]]></title>
@@ -327,7 +414,7 @@ Experience the delight of uttering those magical words: &#8216;I love you&#8217;
 
 <p>Lee wrote his first <a href="https://www.unboxedconsulting.com/blog/tips-for-successful-pair-programming">Unboxed blog post about pair programming</a>. I have paired myself with Lee and found his teqhnique working well and very useful. I especially liked the Pomodoro approach for timing. Nice one Lee!</p>
 
-<h2>Custom DNS tool that resolves wildcard DNS (Matt Pepperell)</h2>
+<h2>Custom DNS tool that resolves wildcard DNS (Matt Peperell)</h2>
 
 <p><a href="http://xip.io/">http://xip.io/</a></p>
 
