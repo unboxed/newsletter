@@ -70,6 +70,9 @@ This is another tool from Adobe (boo), which actually makes sense. Download the 
 
 [http://labs.adobe.com/technologies/shadow/](http://labs.adobe.com/technologies/shadow/)
 
+## Developer Day (Chris P)
+
+I'm writing this before it's started, so not really sure what will happen. Check back here tomorrow and I might have updated this.
 
 ## That's it...
 
