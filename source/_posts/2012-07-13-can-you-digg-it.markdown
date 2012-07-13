@@ -72,7 +72,7 @@ This is another tool from Adobe (boo), which actually makes sense. Download the 
 
 ## Developer Day (Chris P)
 
-I'm writing this before it's started, so not really sure what will happen. Check back here tomorrow and I might have updated this.
+The developer day felt a little off the cuff, but resulted in some interesting discussion and many actions (some already in progress) listed here: [https://wiki.unboxedconsulting.com/wiki/Dev_Day](https://wiki.unboxedconsulting.com/wiki/Dev_Day)
 
 ## That's it...
 
