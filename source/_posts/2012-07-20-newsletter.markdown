@@ -48,7 +48,7 @@ I remember when I've seen Firefox cheekily swollowing about 2GBs of memory on my
 
 Firefox 15 is expecterd to be released on 28th of August.
 
-#### Are we playnig yet?
+#### Are we playing yet?
 
 Have you checked your browser's HTML5 audio implementation recently? Thanks to [SoundCloud's initiative](http://areweplayingyet.org/) to bring more harmony into HTML5 Audio implementations, it started to look like HTML5 audio is actually getting widely accepted and getting closer to be  feature complete across multiple browsers. It's looking pretty good. [Chrome Canary](https://tools.google.com/dlpage/chromesxs/) scores 41/44 as of today and there's a burndown of all other browsers' scores too.
 
