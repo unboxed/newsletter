@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-07-13T21:01:03+01:00</updated>
+  <updated>2012-07-20T16:19:46+02:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -14,9 +14,77 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Another Week Another Newsletter]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/07/20/newsletter/"/>
+    <updated>2012-07-20T15:00:00+02:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/07/20/newsletter</id>
+    <content type="html"><![CDATA[<h2>ActiveSupport Method Of The Week : <a href="http://as.rubyonrails.org/classes/ActiveSupport/CoreExtensions/Hash/ReverseMerge.html">ReverseMerge</a></h2>
+
+<p>Allows for reverse merging where its the keys in the calling hash that wins over those in the other_hash. This is particularly useful for initializing an incoming option hash with default values:</p>
+
+<pre><code>def setup(options = {})
+  options.reverse_merge! :size =&gt; 25, :velocity =&gt; 10
+end
+</code></pre>
+
+<p>The default :size and :velocity is only set if the options passed in doesn‘t already have those keys set.</p>
+
+<h2>Innovation Days &amp; Conferences</h2>
+
+<p>If there&#8217;s some technical itch you want to scratch but don&#8217;t get to in your day-to-day client work, book an innovation day and get cracking on it.  At our last dev afternoon in the London office we identified a bunch of tasks that would be perfect for an innovation day [wiki/Dev_Day#Not_Done]https://wiki.unboxedconsulting.com/wiki/Dev_Day#Not_Done).  Please remember to book them!</p>
+
+<p>We&#8217;re keen that Unboxed developers get on stage and talk about things.  We&#8217;re also aware the client work means you might not have the time, but that&#8217;s another use for innovation days are for!  If you have a topic idea, book an innovation day or two to prepare it and then submit it to all the conferences you can.  A good resource for ruby conferences is http://rubythere.com/, but there are plenty of other conferences out there to try out at.  Even if you don&#8217;t get through the CFP Unboxed is likely to pay for the ticket to the conf.</p>
+
+<p>You&#8217;ve got up to 10 innovation days, so don&#8217;t be afraid to use them!</p>
+
+<h2>Dev Submissions</h2>
+
+<h3>Pawel J</h3>
+
+<p><a href="http://blog.greweb.fr/2012/07/how-i-learned-backbone-js-three-js-glsl-in-one-week/?utm_source=javascriptweekly&amp;utm_medium=email">How I learned Backbone.js, Three.js &amp; GLSL in one week • @GreWeb</a></p>
+
+<p><a href="http://legitimatesounding.com/blog/building_a_mongodb_clone_in_postgres_part_1.html">Building a MongoDB Clone in Postgres: Part 1 - LegitimateSounding.com</a></p>
+
+<p><a href="http://hackersays.com/2f2a78">Hacker Says quotes - awesome quotes</a></p>
+
+<h3>Grant S</h3>
+
+<p>The <a href="http://ruby-toolbox.com/">Ruby Toolbox</a> is another invaluable resource for Ruby and Rails developers</p>
+
+<h3>Attila G</h3>
+
+<h4>Firefox 15 plugs the add-on leaks</h4>
+
+<p><a href="http://blog.mozilla.org/nnethercote/2012/07/19/firefox-15-plugs-the-add-on-leaks/">15 Plugs</a></p>
+
+<p>I remember when I&#8217;ve seen Firefox cheekily swollowing about 2GBs of memory on my Mac. That was the time I decided to give up on it and turn to the alternative browsers when it comes down to development. Let&#8217;s be honest, Firefox is not the only browser with a decent inspector anymore, in fact Google Chrome&#8217;s web inspector and development tools of the upcoming Safari 6 seem to be pretty decent. Honestly I don&#8217;t have much hope for Firefox, but at least it&#8217;s good to see that there&#8217;s been some efforts towards fixing its biggest issue. (At least that&#8217;s the way I see it.)</p>
+
+<p>Firefox 15 is expecterd to be released on 28th of August.</p>
+
+<h4>Are we playnig yet?</h4>
+
+<p>Have you checked your browser&#8217;s HTML5 audio implementation recently? Thanks to <a href="http://areweplayingyet.org/">SoundCloud&#8217;s initiative</a> to bring more harmony into HTML5 Audio implementations, it started to look like HTML5 audio is actually getting widely accepted and getting closer to be  feature complete across multiple browsers. It&#8217;s looking pretty good. <a href="https://tools.google.com/dlpage/chromesxs/">Chrome Canary</a> scores 41/44 as of today and there&#8217;s a burndown of all other browsers&#8217; scores too.</p>
+
+<h4>OAuth 2 drafts</h4>
+
+<p>You must be familiar with Github or Facebook authentication. But do you know how that actually works?</p>
+
+<p>Go, scan through the draft to get a better understanding what the security implications are and how this protocol solves the most common problems. You would be amazed how much traffic goes between clients and servers Go, <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-30">read it</a>. I did it earlier this week and now it makes much more sense. It&#8217;s not too difficult, really.</p>
+
+<h4>Video to watch this week</h4>
+
+<p><a href="http://www.youtube.com/watch?v=WpkDN78P884">Keynote: Architecture the Lost Years by Robert Martin</a></p>
+
+<h2>That&#8217;s it&#8230;</h2>
+
+<p>Have a great weekend guys.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Can you digg it?]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/07/13/can-you-digg-it/"/>
-    <updated>2012-07-13T13:37:00+01:00</updated>
+    <updated>2012-07-13T13:37:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/07/13/can-you-digg-it</id>
     <content type="html"><![CDATA[<p>Are you ready for this week&#8217;s feature filled fiasco? I know I am! So fasten your seat belts, tie your hair back and prepare for an emotional roller coaster of developer developments.</p>
 
@@ -103,7 +171,7 @@
   <entry>
     <title type="html"><![CDATA[Better Late Than Never]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/07/09/better-late-than-never/"/>
-    <updated>2012-07-09T14:15:00+01:00</updated>
+    <updated>2012-07-09T14:15:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/07/09/better-late-than-never</id>
     <content type="html"><![CDATA[<h2>jQuery - Use it but don&#8217;t host it! (Matt P)</h2>
 
@@ -179,7 +247,7 @@ Here&#8217;s a list of the hacks
   <entry>
     <title type="html"><![CDATA[ALL the dev things]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/29/new-post/"/>
-    <updated>2012-06-29T13:59:00+01:00</updated>
+    <updated>2012-06-29T13:59:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/29/new-post</id>
     <content type="html"><![CDATA[<p>[Enter food-related obligatory dev-newsletter pun here].</p>
 
@@ -266,7 +334,7 @@ Mind you, from a sql injection and readability perspective, I think binding rema
   <entry>
     <title type="html"><![CDATA[The week in dev]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/22/the-week-in-dev/"/>
-    <updated>2012-06-22T11:15:00+01:00</updated>
+    <updated>2012-06-22T11:15:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/22/the-week-in-dev</id>
     <content type="html"><![CDATA[<p>This week&#8217;s tasty dev morsels for your delectation.</p>
 
@@ -334,7 +402,7 @@ Experience the delight of uttering those magical words: &#8216;I love you&#8217;
   <entry>
     <title type="html"><![CDATA[The week the newsletter almost became purple]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/"/>
-    <updated>2012-06-15T15:44:00+01:00</updated>
+    <updated>2012-06-15T15:44:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple</id>
     <content type="html"><![CDATA[<p>First things first: Bender, our lovely campfire bot, now knows how to choose a newsletter author. It works on top of the existing lists api and removes you once you&#8217;ve been chosen. I think it&#8217;s time he made an appearance in the dev chat room&#8230;</p>
 
@@ -406,7 +474,7 @@ Experience the delight of uttering those magical words: &#8216;I love you&#8217;
   <entry>
     <title type="html"><![CDATA[News News News]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news/"/>
-    <updated>2012-06-08T17:48:00+01:00</updated>
+    <updated>2012-06-08T17:48:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/08/news-news-news</id>
     <content type="html"><![CDATA[<h2>Tips for successful pair programming (Lee Richmond)</h2>
 
@@ -470,7 +538,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
   <entry>
     <title type="html"><![CDATA[News of the week]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/06/01/news-of-the-week/"/>
-    <updated>2012-06-01T15:22:00+01:00</updated>
+    <updated>2012-06-01T15:22:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/06/01/news-of-the-week</id>
     <content type="html"><![CDATA[<h2>MS-provided IE testing VMs (Muz)</h2>
 
@@ -607,7 +675,7 @@ This is a very interesting new approach if you think about it, that&#8217;s prob
   <entry>
     <title type="html"><![CDATA[The Week Of Winning]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning/"/>
-    <updated>2012-05-25T15:00:00+01:00</updated>
+    <updated>2012-05-25T15:00:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/05/25/the-week-of-winning</id>
     <content type="html"><![CDATA[<p>This weeks instalment is awesome, mainly due to the lack of content from its author. Enjoy!</p>
 
@@ -695,7 +763,7 @@ I only found out about it today, looks like it could be interesting.</p>
   <entry>
     <title type="html"><![CDATA[The week that was]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was/"/>
-    <updated>2012-05-18T14:00:00+01:00</updated>
+    <updated>2012-05-18T14:00:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/05/18/the-week-that-was</id>
     <content type="html"><![CDATA[<p>Welcome to this weeks installment. @jpawlyn submits for your consideration the following tasty crumpets from the land of tech.</p>
 
@@ -816,7 +884,7 @@ Harnessing the power of the elements for the purpose of monitoring is a brillian
   <entry>
     <title type="html"><![CDATA[The week in links]]></title>
     <link href="http://unboxed.github.com/newsletter/blog/2012/05/11/the-week-in-links/"/>
-    <updated>2012-05-11T15:46:00+01:00</updated>
+    <updated>2012-05-11T15:46:00+02:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/05/11/the-week-in-links</id>
     <content type="html"><![CDATA[<p>Welcome to this weeks installment. I - your humble guest editor, Luke R. - submit for your consideration the following lovingly curated selection of internets.</p>
 

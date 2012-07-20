@@ -9,7 +9,7 @@
   <meta name="author" content="Unboxed Developers">
 
   
-  <meta name="description" content="Are you ready for this week&#8217;s feature filled fiasco? I know I am! So fasten your seat belts, tie your hair back and prepare for an emotional &hellip;">
+  <meta name="description" content="ActiveSupport Method Of The Week : ReverseMerge Allows for reverse merging where its the keys in the calling hash that wins over those in the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -70,6 +70,101 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/newsletter/blog/2012/07/20/newsletter/">Another Week Another Newsletter</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-20T15:00:00+02:00" pubdate data-updated="true">Jul 20<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>ActiveSupport Method Of The Week : <a href="http://as.rubyonrails.org/classes/ActiveSupport/CoreExtensions/Hash/ReverseMerge.html">ReverseMerge</a></h2>
+
+<p>Allows for reverse merging where its the keys in the calling hash that wins over those in the other_hash. This is particularly useful for initializing an incoming option hash with default values:</p>
+
+<pre><code>def setup(options = {})
+  options.reverse_merge! :size =&gt; 25, :velocity =&gt; 10
+end
+</code></pre>
+
+<p>The default :size and :velocity is only set if the options passed in doesn‘t already have those keys set.</p>
+
+<h2>Innovation Days &amp; Conferences</h2>
+
+<p>If there&#8217;s some technical itch you want to scratch but don&#8217;t get to in your day-to-day client work, book an innovation day and get cracking on it.  At our last dev afternoon in the London office we identified a bunch of tasks that would be perfect for an innovation day [wiki/Dev_Day#Not_Done]https://wiki.unboxedconsulting.com/wiki/Dev_Day#Not_Done).  Please remember to book them!</p>
+
+<p>We&#8217;re keen that Unboxed developers get on stage and talk about things.  We&#8217;re also aware the client work means you might not have the time, but that&#8217;s another use for innovation days are for!  If you have a topic idea, book an innovation day or two to prepare it and then submit it to all the conferences you can.  A good resource for ruby conferences is http://rubythere.com/, but there are plenty of other conferences out there to try out at.  Even if you don&#8217;t get through the CFP Unboxed is likely to pay for the ticket to the conf.</p>
+
+<p>You&#8217;ve got up to 10 innovation days, so don&#8217;t be afraid to use them!</p>
+
+<h2>Dev Submissions</h2>
+
+<h3>Pawel J</h3>
+
+<p><a href="http://blog.greweb.fr/2012/07/how-i-learned-backbone-js-three-js-glsl-in-one-week/?utm_source=javascriptweekly&amp;utm_medium=email">How I learned Backbone.js, Three.js &amp; GLSL in one week • @GreWeb</a></p>
+
+<p><a href="http://legitimatesounding.com/blog/building_a_mongodb_clone_in_postgres_part_1.html">Building a MongoDB Clone in Postgres: Part 1 - LegitimateSounding.com</a></p>
+
+<p><a href="http://hackersays.com/2f2a78">Hacker Says quotes - awesome quotes</a></p>
+
+<h3>Grant S</h3>
+
+<p>The <a href="http://ruby-toolbox.com/">Ruby Toolbox</a> is another invaluable resource for Ruby and Rails developers</p>
+
+<h3>Attila G</h3>
+
+<h4>Firefox 15 plugs the add-on leaks</h4>
+
+<p><a href="http://blog.mozilla.org/nnethercote/2012/07/19/firefox-15-plugs-the-add-on-leaks/">15 Plugs</a></p>
+
+<p>I remember when I&#8217;ve seen Firefox cheekily swollowing about 2GBs of memory on my Mac. That was the time I decided to give up on it and turn to the alternative browsers when it comes down to development. Let&#8217;s be honest, Firefox is not the only browser with a decent inspector anymore, in fact Google Chrome&#8217;s web inspector and development tools of the upcoming Safari 6 seem to be pretty decent. Honestly I don&#8217;t have much hope for Firefox, but at least it&#8217;s good to see that there&#8217;s been some efforts towards fixing its biggest issue. (At least that&#8217;s the way I see it.)</p>
+
+<p>Firefox 15 is expecterd to be released on 28th of August.</p>
+
+<h4>Are we playnig yet?</h4>
+
+<p>Have you checked your browser&#8217;s HTML5 audio implementation recently? Thanks to <a href="http://areweplayingyet.org/">SoundCloud&#8217;s initiative</a> to bring more harmony into HTML5 Audio implementations, it started to look like HTML5 audio is actually getting widely accepted and getting closer to be  feature complete across multiple browsers. It&#8217;s looking pretty good. <a href="https://tools.google.com/dlpage/chromesxs/">Chrome Canary</a> scores 41/44 as of today and there&#8217;s a burndown of all other browsers&#8217; scores too.</p>
+
+<h4>OAuth 2 drafts</h4>
+
+<p>You must be familiar with Github or Facebook authentication. But do you know how that actually works?</p>
+
+<p>Go, scan through the draft to get a better understanding what the security implications are and how this protocol solves the most common problems. You would be amazed how much traffic goes between clients and servers Go, <a href="http://tools.ietf.org/html/draft-ietf-oauth-v2-30">read it</a>. I did it earlier this week and now it makes much more sense. It&#8217;s not too difficult, really.</p>
+
+<h4>Video to watch this week</h4>
+
+<p><a href="http://www.youtube.com/watch?v=WpkDN78P884">Keynote: Architecture the Lost Years by Robert Martin</a></p>
+
+<h2>That&#8217;s it&#8230;</h2>
+
+<p>Have a great weekend guys.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/newsletter/blog/2012/07/13/can-you-digg-it/">Can You Digg It?</a></h1>
     
     
@@ -86,7 +181,7 @@
   
 
 
-<time datetime="2012-07-13T13:37:00+01:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
+<time datetime="2012-07-13T13:37:00+02:00" pubdate data-updated="true">Jul 13<span>th</span>, 2012</time>
         
       </p>
     
@@ -200,7 +295,7 @@
   
 
 
-<time datetime="2012-07-09T14:15:00+01:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
+<time datetime="2012-07-09T14:15:00+02:00" pubdate data-updated="true">Jul 9<span>th</span>, 2012</time>
         
       </p>
     
@@ -303,7 +398,7 @@ Here&#8217;s a list of the hacks
   
 
 
-<time datetime="2012-06-29T13:59:00+01:00" pubdate data-updated="true">Jun 29<span>th</span>, 2012</time>
+<time datetime="2012-06-29T13:59:00+02:00" pubdate data-updated="true">Jun 29<span>th</span>, 2012</time>
         
       </p>
     
@@ -417,7 +512,7 @@ Mind you, from a sql injection and readability perspective, I think binding rema
   
 
 
-<time datetime="2012-06-22T11:15:00+01:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2012</time>
+<time datetime="2012-06-22T11:15:00+02:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2012</time>
         
       </p>
     
@@ -512,7 +607,7 @@ Experience the delight of uttering those magical words: &#8216;I love you&#8217;
   
 
 
-<time datetime="2012-06-15T15:44:00+01:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
+<time datetime="2012-06-15T15:44:00+02:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
         
       </p>
     
@@ -611,7 +706,7 @@ Experience the delight of uttering those magical words: &#8216;I love you&#8217;
   
 
 
-<time datetime="2012-06-08T17:48:00+01:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
+<time datetime="2012-06-08T17:48:00+02:00" pubdate data-updated="true">Jun 8<span>th</span>, 2012</time>
         
       </p>
     
@@ -702,7 +797,7 @@ I also discovered a technique I have longed for for a very long time: Passing a 
   
 
 
-<time datetime="2012-06-01T15:22:00+01:00" pubdate data-updated="true">Jun 1<span>st</span>, 2012</time>
+<time datetime="2012-06-01T15:22:00+02:00" pubdate data-updated="true">Jun 1<span>st</span>, 2012</time>
         
       </p>
     
@@ -866,7 +961,7 @@ This is a very interesting new approach if you think about it, that&#8217;s prob
   
 
 
-<time datetime="2012-05-25T15:00:00+01:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
+<time datetime="2012-05-25T15:00:00+02:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
         
       </p>
     
@@ -981,7 +1076,7 @@ I only found out about it today, looks like it could be interesting.</p>
   
 
 
-<time datetime="2012-05-18T14:00:00+01:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
+<time datetime="2012-05-18T14:00:00+02:00" pubdate data-updated="true">May 18<span>th</span>, 2012</time>
         
       </p>
     
@@ -1108,163 +1203,9 @@ Harnessing the power of the elements for the purpose of monitoring is a brillian
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/05/11/the-week-in-links/">The Week in Links</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-11T15:46:00+01:00" pubdate data-updated="true">May 11<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Welcome to this weeks installment. I - your humble guest editor, Luke R. - submit for your consideration the following lovingly curated selection of internets.</p>
-
-<h2>Ruby</h2>
-
-<h3>Koans of wisdom - Robert P.</h3>
-
-<p>I&#8217;ve still been learning Ruby and RoR, which is a very interesting learning curve. Amongst the countless screencasts and tutorials I&#8217;ve found, there are some really nice and effective learning tools.</p>
-
-<p>These are the ones I like the most: You can learn by doing code - and you can do it in your browser. You need to sign up for these (all free), so the system can track your progress and reputation.</p>
-
-<ul>
-<li><a href="http://rubeque.com/problems">http://rubeque.com/problems</a></li>
-<li><a href="http://rubykoans.com/">http://rubykoans.com/</a> (There is a proper local version, which is a proper TDD emulation with 180 errors)</li>
-<li><a href="http://rubymonk.com/">http://rubymonk.com/</a></li>
-</ul>
-
-
-<p>Check them out, as a newbie I&#8217;d definitely recommend them all.</p>
-
-<h3>Dumpster diving in the Rails source - Matt P.</h3>
-
-<p>As a newcomer to rails, I was impressed that it knew that the plural of &#8220;person&#8221; is &#8220;people&#8221;.  Then I wondered how it knew.  A bit of digging around in the source tree and I found <a href="https://github.com/rails/rails/blob/6c367a0d787705746f262d0bd5ad8c4f13a8c809/activesupport/lib/active_support/inflections.rb">active_support/inflections.rb</a> &#8211; and learned that an acceptable (albeit archaic) plural of the word &#8220;cow&#8221; is &#8220;kine&#8221;.</p>
-
-<h3>Mixins - a refactoring anti-pattern - Murray S.</h3>
-
-<p>This <a href="http://blog.steveklabnik.com/posts/2012-05-07-mixins--a-refactoring-anti-pattern">http://blog.steveklabnik.com/posts/2012-05-07-mixins&#8211;a-refactoring-anti-pattern</a> was quite an interesting discussion about refactoring and complexity.</p>
-
-<h2>Conferences</h2>
-
-<h3>Ruby Lugundum - Murray S.</h3>
-
-<p><a href="http://rulu.eu">http://rulu.eu</a></p>
-
-<p>The 2nd version of Ruby Lugundum (a 2 day conference in Lyon, France, end of June).  I didn&#8217;t hear anything about their first one last year, I think it was a pretty small affair.  This year&#8217;s looks more professional and interestingly it seems to have <a href="http://rulu.eu/2012/05/10/speakers.html">a lineup</a> that isn&#8217;t full of the same old faces spouting the same old talks.  Might be worth going to, and it&#8217;s only 80€.</p>
-
-<h2>Text editing</h2>
-
-<h3>Tmux and the pasteboard - Mark S.</h3>
-
-<p>Do you use tmux? Do you use vim? Does trying to copy and paste between applications within tmux and other OS X apps annoy you? Read <a href="http://robots.thoughtbot.com/post/19398560514/how-to-copy-and-paste-with-tmux-on-mac-os-x">this post</a> by Thoughbot to minimise a small, but daily frustration. I ignored the last bit about the shell script for tmux buffers and instead used <a href="http://unix.stackexchange.com/a/32451">this Unix StackExchange answer</a>.</p>
-
-<p>If you are interested in the details of why the pasteboard is not accessible from within tmux on OS X read <a href="https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/blob/master/README.md">this</a>.</p>
-
-<h2>Text editing for the less discerning developer</h2>
-
-<h3>Sublime Text 2 - Command-Line Integration That Doesn&#8217;t Enrage My Inner Pedant - Matt F.</h3>
-
-<p>Risking public shame, Matt F. not only shared that he is a Sublime Text user, but also some command line tips for other Sublime users:</p>
-
-<p>I started using Sublime Text 2 during Blackadder&#8217;s little vacation last week whilst Krispy, a.k.a. Chris C, a.k.a. <em>not</em> the creator of &#8216;The X-Files&#8217; and I groped our way through AppsForGood.  (I&#8217;m pleased to report the groping has continued this week vis a vis the Unboxed Website, albeit on a solo basis&#8230;</p>
-
-<p>Sublime Text 2 ships with a command line tool named <code>subl</code> to work with files <a href="http://www.sublimetext.com/docs/2/osx_command_line.html">on the command line</a>.  For some reason continually typing <code>subl</code> enraged my inner pedant. I wanted my invocation of the application to be more meaningful to me as the invoker.</p>
-
-<p>I therefore used the mystifyingly-popular knowledge trough called &#8216;the internet&#8217; to discover this - <a href="https://gist.github.com/1236170">https://gist.github.com/1236170</a>.  Now I can invoke sublime on the command line using <code>sublime</code> instead of <code>subl</code>. A few more keystrokes are required but importantly less mental kittens die.</p>
-
-<h2>Know your history</h2>
-
-<h3>Computer Science - History Is Important - Matt F.</h3>
-
-<p>Julian Simpson (a.k.a. <a href="http://twitter.com/thebuilddoctor">@thebuilddoctor</a>) tweeted a link to this web log post a while back - <a href="http://www.blackliszt.com/2012/03/computer-history.html">http://www.blackliszt.com/2012/03/computer-history.html</a>. I&#8217;ve only just got round to reading it though.  The post argues that software is often a predominantly a-historical discipline which is to its detriment. This is interesting to me because on every new project I work on, I feel I forget to remember the lessons I learnt from the mistakes I made during previous projects.</p>
-
-<h2>Attila</h2>
-
-<p>As always, the ever popular Attila section. This week he regales us with Bundler tips, issues with Readability, Alfred searches and the final word on LESS. Like the Macalope, you can wait till the end of the week to read what he has to say, or for the impatient, subscribe to developers@ubxd.com for the early edition.</p>
-
-<h3>Bundler updates</h3>
-
-<p>So you have been using .rvmrc or .rbenv-version files to keep track of what version of Ruby is required for your project, right? Well, maybe there&#8217;s an even better way coming:</p>
-
-<p>Ruby version dependencies straight in your Gemfile. Coming soon to a Terminal near you:</p>
-
-<pre><code>source 'http://rubygems.org'
-
-ruby '1.9.3'
-gem  'rails', '3.2.3'
-</code></pre>
-
-<p>You can install a prerelease version of Bundler already today:
-<code>gem install bundler --pre</code></p>
-
-<p>There&#8217;s an article on the Heroku blog about this, make sure to read <a href="http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku">http://blog.heroku.com/archives/2012/5/9/multiple_ruby_version_support_on_heroku</a>
-I&#8217;m looking forward to RVM and RBenv to hook into these if possible and provide us a seamless switch between different projects that use different versions of Ruby.</p>
-
-<h2>Readability Article Publishing Guidelines</h2>
-
-<p>It has come to my attention that we might need to shape our markup-fu a little bit. When I tried to save Andrew&#8217;s recent article from the Unboxed Blog to my Readability account I noticed that the artcle parsing was not quite successful, more precisely Readability picked up &#8220;Unboxed Blog&#8221; as the article title as opposed to &#8220;Code maintainability - is it a test thing?&#8221;. Find the example <a href="http://www.readability.com/articles/g9qlxgpx">here</a>.</p>
-
-<p>After a tiny bit of googling I found this <a href="http://www.readability.com/publishers/guidelines">helpful article</a> on the Readability website that has reasonable markup crafting suggestions to everybody.</p>
-
-<p>Note that it is not only intended to be used for Readability but the suggestions there are quite reasonable for every day markup crafting. I guess my main point is that rather than just throwing a bunch of <code>&lt;div&gt;s</code> onto the browsers, it has become quite clear that how much additional functionality and data you can get by crafting your markup right.</p>
-
-<h2>Alfred custom searches</h2>
-
-<p>By now you probably know that you can add customised searches to Alfred. I&#8217;ve been using these for a while and thought that maybe others would make good use of them too:</p>
-
-<pre><code>Search title: Search Github for
-URL: http://github.com/search?q={query}
-keyword: gh
-
-Search URL: https://www.ruby-toolbox.com/search?utf8=%E2%9C%93&amp;q={query}
-title: Search The Ruby Toolbox for
-keyword: rtb
-
-Search URL: http://rubygems.org/search?utf8=%E2%9C%93&amp;query={query}
-title: Search RubyGems for
-keyword: gem
-</code></pre>
-
-<p>In order to add them, go to Alfred&#8217;s preferences, look for &#8220;Custom Searches&#8221; in the sidebar and add them if you want. Happy searching!</p>
-
-<h2>Less is more. Really.</h2>
-
-<p>This one is just for trolling Will and maybe as a response to his latest rants on Less last week. I don&#8217;t know at this point if it&#8217;s worth coming up with yet another debate around this subject, I&#8217;ve had my examples in the past and I started to think that not every single tool fits every person. Less, just like anything else might be your thing or might not be.</p>
-
-<p>However, I think that the same way just like any other tool can be used wisely and could provide huge benefits to your project.</p>
-
-<h2>Diversions</h2>
-
-<h3>Wolfenstein 3D - Rich A.</h3>
-
-<p>Since we live in a glorious new age where we <strike>no longer have to wait for code to compile</strike> have to wait for tests to run, Rich A. wrote in with news of a web-based <a href="http://wolfenstein.bethsoft.com/game/wolf3d.html">Wolfenstein 3D</a> to keep you busy while cucumber is cucumbering.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/newsletter/blog/page/2/">&larr; Older</a>
     
     <a href="/newsletter/blog/archives">Blog Archives</a>
     
@@ -1275,6 +1216,10 @@ keyword: gem
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/newsletter/blog/2012/07/20/newsletter/">Another Week Another Newsletter</a>
+      </li>
     
       <li class="post">
         <a href="/newsletter/blog/2012/07/13/can-you-digg-it/">Can you digg it?</a>
@@ -1290,10 +1235,6 @@ keyword: gem
     
       <li class="post">
         <a href="/newsletter/blog/2012/06/22/the-week-in-dev/">The week in dev</a>
-      </li>
-    
-      <li class="post">
-        <a href="/newsletter/blog/2012/06/15/the-week-the-newsletter-almost-became-purple/">The week the newsletter almost became purple</a>
       </li>
     
   </ul>
