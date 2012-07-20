@@ -19,9 +19,9 @@ The default :size and :velocity is only set if the options passed in doesn‘t a
 
 ## Innovation Days & Conferences
 
-If there's some technical itch you want to scratch but don't get to in your day-to-day client work, book an innovation day and get cracking on it.  At our last dev afternoon in the London office we identified a bunch of tasks that would be perfect for an innovation day [wiki/Dev_Day#Not_Done]https://wiki.unboxedconsulting.com/wiki/Dev_Day#Not_Done).  Please remember to book them!
+If there's some technical itch you want to scratch but don't get to in your day-to-day client work, book an innovation day and get cracking on it.  At our last dev afternoon in the London office we identified [a bunch of tasks that would be perfect for an innovation day](https://wiki.unboxedconsulting.com/wiki/Dev_Day#Not_Done).  Please remember to book them!
 
-We're keen that Unboxed developers get on stage and talk about things.  We're also aware the client work means you might not have the time, but that's another use for innovation days are for!  If you have a topic idea, book an innovation day or two to prepare it and then submit it to all the conferences you can.  A good resource for ruby conferences is http://rubythere.com/, but there are plenty of other conferences out there to try out at.  Even if you don't get through the CFP Unboxed is likely to pay for the ticket to the conf.
+We're keen that Unboxed developers get on stage and talk about things.  We're also aware the client work means you might not have the time, but that's another use for innovation days are for!  If you have a topic idea, book an innovation day or two to prepare it and then submit it to all the conferences you can.  A good resource for ruby conferences is [rubythere.com](http://rubythere.com/), but there are plenty of other conferences out there to try out at.  Even if you don't get through the CFP Unboxed is likely to pay for the ticket to the conf.
 
 You've got up to 10 innovation days, so don't be afraid to use them!
 
@@ -42,7 +42,7 @@ The [Ruby Toolbox](http://ruby-toolbox.com/) is another invaluable resource for 
 ### Attila G
 
 #### Firefox 15 plugs the add-on leaks
-[15 Plugs](http://blog.mozilla.org/nnethercote/2012/07/19/firefox-15-plugs-the-add-on-leaks/)
+[http://blog.mozilla.org/nnethercote/2012/07/19/firefox-15-plugs-the-add-on-leaks/](http://blog.mozilla.org/nnethercote/2012/07/19/firefox-15-plugs-the-add-on-leaks/)
 
 I remember when I've seen Firefox cheekily swollowing about 2GBs of memory on my Mac. That was the time I decided to give up on it and turn to the alternative browsers when it comes down to development. Let's be honest, Firefox is not the only browser with a decent inspector anymore, in fact Google Chrome's web inspector and development tools of the upcoming Safari 6 seem to be pretty decent. Honestly I don't have much hope for Firefox, but at least it's good to see that there's been some efforts towards fixing its biggest issue. (At least that's the way I see it.)
 
