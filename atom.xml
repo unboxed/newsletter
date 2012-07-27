@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-07-20T15:48:06+01:00</updated>
+  <updated>2012-07-27T15:51:33+01:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The week in bitesize chunks]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/07/27/the-week-in-bitesize-chunks/"/>
+    <updated>2012-07-27T03:34:00+01:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/07/27/the-week-in-bitesize-chunks</id>
+    <content type="html"><![CDATA[<p>This week&#8217;s beauties for your perusal.</p>
+
+<h2>Meatier Content (Andrew M)</h2>
+
+<p><a href="http://baconipsum.com/">http://baconipsum.com/</a></p>
+
+<p>For those of you non-veggies who prefer a bit of meat to your content!</p>
+
+<h2>SSHpocolypse (Andrew M)</h2>
+
+<p><a href="https://github.com/blog/1212-surviving-the-sshpocolypse">https://github.com/blog/1212-surviving-the-sshpocolypse</a></p>
+
+<p>An interesting article this morning posted on the Github blog regarding issues with their SSH infrastructure.</p>
+
+<h2>Evolution of the Web (Rich A)</h2>
+
+<p><a href="http://www.evolutionoftheweb.com/">http://www.evolutionoftheweb.com/</a></p>
+
+<p>Crazy immersive infographic outlining all the key players and events that have made the web what it is today.</p>
+
+<h2>Yet-another-mockup tool of the week (Rich A)</h2>
+
+<p><a href="http://www.fluidui.com/">http://www.fluidui.com/</a></p>
+
+<p>Specialises in quickly slapping together mockups of mobile interfaces for iOS and Android.</p>
+
+<h2>OSX Mountain Lion Survival Guide (Shaban K)</h2>
+
+<p><a href="http://gizmodo.com/5928208/the-os-x-mountain-lion-survival-guide">http://gizmodo.com/5928208/the-os-x-mountain-lion-survival-guide</a></p>
+
+<h2>Leo Cassarani on Chef</h2>
+
+<p><a href="https://idisk.unboxedconsulting.com/Unboxed_Consulting/Presentations/Chef.pdf">https://idisk.unboxedconsulting.com/Unboxed_Consulting/Presentations/Chef.pdf</a></p>
+
+<p>For those who missed last nights talk, Leo showed us all a little about chef</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Another Week Another Newsletter]]></title>
