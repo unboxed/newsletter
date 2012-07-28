@@ -14,13 +14,13 @@ After realising I had forgotton this little nugget of the newseletter I panicked
 
 So, what I realised is knew of this method however I didn't spot some of the contexts in which it could be used. The touch method can be used quite simply to 'touch' an ActiveRecord model and update its udpated_at/_on attribute. We can also pass an attribute to the method to specify which column we would like to update. So here's the cool bit. Got nested models you want to update too? Add :touch to your relationship and POW! You can invoke touch on your related models too with very little extra work.
 
-  class User < ActiveRecord::Base
-    has_one :oauth_authentication, :touch => false
-  end
+    class User < ActiveRecord::Base
+      has_one :oauth_authentication, :touch => false
+    end
 
-  class OauthAuthentication < ActiveRecord::Base
-    belongs_to :user, :touch => true
-  end
+    class OauthAuthentication < ActiveRecord::Base
+      belongs_to :user, :touch => true
+    end
 
 So in our example everytime our user updates something to do with their OauthAuthentication a user will also have the updated at attribute reset.
 
