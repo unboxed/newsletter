@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-07-27T15:51:33+01:00</updated>
+  <updated>2012-07-28T11:07:48+01:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -19,6 +19,28 @@
     <updated>2012-07-27T03:34:00+01:00</updated>
     <id>http://unboxed.github.com/newsletter/blog/2012/07/27/the-week-in-bitesize-chunks</id>
     <content type="html"><![CDATA[<p>This week&#8217;s beauties for your perusal.</p>
+
+<h2>ActiveRecord Method of the Week: <a href="http://api.rubyonrails.org/classes/ActiveRecord/Persistence.html#method-i-touch">touch</a></h2>
+
+<p>After realising I had forgotton this little nugget of the newseletter I panicked realising I couldn&#8217;t think of anything interesting off the top of my head. I scoured the Rails docs to see if there was anything better than showing you all how to use &#8216;find&#8217;!</p>
+
+<p>So, what I realised is knew of this method however I didn&#8217;t spot some of the contexts in which it could be used. The touch method can be used quite simply to &#8216;touch&#8217; an ActiveRecord model and update its udpated_at/_on attribute. We can also pass an attribute to the method to specify which column we would like to update. So here&#8217;s the cool bit. Got nested models you want to update too? Add :touch to your relationship and POW! You can invoke touch on your related models too with very little extra work.</p>
+
+<p>  class User &lt; ActiveRecord::Base</p>
+
+<pre><code>has_one :oauth_authentication, :touch =&gt; false
+</code></pre>
+
+<p>  end</p>
+
+<p>  class OauthAuthentication &lt; ActiveRecord::Base</p>
+
+<pre><code>belongs_to :user, :touch =&gt; true
+</code></pre>
+
+<p>  end</p>
+
+<p>So in our example everytime our user updates something to do with their OauthAuthentication a user will also have the updated at attribute reset.</p>
 
 <h2>Meatier Content (Andrew M)</h2>
 
@@ -53,6 +75,13 @@
 <p><a href="https://idisk.unboxedconsulting.com/Unboxed_Consulting/Presentations/Chef.pdf">https://idisk.unboxedconsulting.com/Unboxed_Consulting/Presentations/Chef.pdf</a></p>
 
 <p>For those who missed last nights talk, Leo showed us all a little about chef</p>
+
+<h2>OAuth 2 drafts ..continued (Murray S)</h2>
+
+<p>First up, there&#8217;s a distillation of the current draft written by <a href="http://jcoglan.com/">James Coglan</a>: <a href="https://gist.github.com/3054344">https://gist.github.com/3054344</a> - as one of the devs responsible for <a href="https://github.com/songkick/oauth2-provider">https://github.com/songkick/oauth2-provider</a> it&#8217;s worth reading his thoughts on the protocol.</p>
+
+<p>Then there&#8217;s the real big news about Oauth2 this week:
+<a href="http://hueniverse.com/2012/07/oauth-2-0-and-the-road-to-hell/">http://hueniverse.com/2012/07/oauth-2-0-and-the-road-to-hell/</a> - one of the main authors gives up on it as being &#8220;WS-* bad&#8221; and &#8220;the biggest professional disappointment of [his] career&#8221;.</p>
 ]]></content>
   </entry>
   
