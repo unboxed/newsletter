@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-This week's beauties for your perusal.
+Bender is full of rage. Beware Bender's wrath!
 
 ##ActiveSupport Method/Class of the Week: [MessageVerifier](http://api.rubyonrails.org/classes/ActiveSupport/MessageVerifier.html)
 
