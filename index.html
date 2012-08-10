@@ -9,7 +9,7 @@
   <meta name="author" content="Unboxed Developers">
 
   
-  <meta name="description" content="This week&#8217;s beauties for your perusal. ActiveRecord Method of the Week: touch After realising I had forgotton this little nugget of the &hellip;">
+  <meta name="description" content="This week&#8217;s beauties for your perusal. ActiveSupport Method/Class of the Week: MessageVerifier To follow with last weeks inconsistency. This &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,150 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/newsletter/blog/2012/08/10/the-week-that-went-better-than-the-last/">The Week That Went Better Than the Last</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-10T12:47:00+01:00" pubdate data-updated="true">Aug 10<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This week&#8217;s beauties for your perusal.</p>
+
+<h2>ActiveSupport Method/Class of the Week: <a href="http://api.rubyonrails.org/classes/ActiveSupport/MessageVerifier.html">MessageVerifier</a></h2>
+
+<p>To follow with last weeks inconsistency. This week we ae back to ActiveSupport. I found myself this week looking into creating signed messages for email unsubscribe links and I came accross the ActiveSupport::MessageVerifier. Not so much of a method but a class for generating signed messages and verifying them.</p>
+
+<p>Create a new verifier</p>
+
+<pre><code>@verifier = ActiveSupport::MessageVerifier.new(Rails.application.config.secret_token)
+</code></pre>
+
+<p>in your view</p>
+
+<pre><code> &lt;% signature = @verifier.generate(@user.id, @email.id) %&gt;
+ &lt;%= link_to email_subscription_path(@email, :signature =&gt; signature), :method =&gt; :delete %&gt;
+</code></pre>
+
+<p>in your controller</p>
+
+<pre><code>def destroy
+  user_id, email_id = @verifier.verify(params[:signature])
+rescue ActiveSupport::MessageVerifier::InvalidSignature
+  # not verified
+end
+</code></pre>
+
+<p>You can also pass options to the MessageVerifier on initialisation. These are the digest which defaults to SHA1 and the serialiser which defaults to Marshal.</p>
+
+<h2>CSS Sprites to optimize websites for retina displays (Robert P)</h2>
+
+<p><a href="http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/">http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/</a></p>
+
+<p>Using CSS sprites is a very great idea and let&#8217;s us to optimise sites, so we can save file size, bandwidth and make less http requests which all makes sense to the user.
+This article explains how to take CSS sprites to the next level and use them to serve retina displays with double pixel ratio images.</p>
+
+<h2>Object#tap (Chris P)</h2>
+
+<p>I&#8217;ve been using tap more and more in recent weeks and I&#8217;m finding it surprisingly elegant. It feels a bit like the unix tool &#8216;tee&#8217;, if you&#8217;ve used that before. So how do we use tap?</p>
+
+<pre><code>my_object.tap { |o| do_something_with(my_object) }
+</code></pre>
+
+<p>So it simply yields &#8216;self&#8217; to the given block. Why is this useful?</p>
+
+<p>Well the cool thing about tap is it always returns the object itself. This means that we can drop tap in a method chain, do some debugging and carry on as if tap weren&#8217;t there.</p>
+
+<pre><code>@posts = Post.where(:author =&gt; 'foo').tap { |posts| puts "#{posts.count} posts with author foo" }
+</code></pre>
+
+<p>You can use #tap for other things too. Here&#8217;s quite a nice refactoring I found.</p>
+
+<pre><code>def client
+  client = HTTPClient.new
+  client.set_auth(base, username, password)
+  client
+end
+</code></pre>
+
+<p>refactored to</p>
+
+<pre><code>def client
+  HTTPClient.new.tap { |c| c.set_auth(base, username, password) }
+end
+</code></pre>
+
+<h2>The Slow Web (Andrew M)</h2>
+
+<p><a href="http://blog.jackcheng.com/post/25160553986/the-slow-web">http://blog.jackcheng.com/post/25160553986/the-slow-web</a></p>
+
+<p>An interesting article about timeline patterns on the web.</p>
+
+<h2>Appliness e magazine (Robert P)</h2>
+
+<p><a href="http://www.appliness.com/">http://www.appliness.com/</a></p>
+
+<p>Developer magazine written by developers for developers. How lovely!
+There are loads of application dev. tutorials and articles. They also have a free to download magazine for tablets.</p>
+
+<h2>The Unboxed CSS Validator (Jolyon P)</h2>
+
+<p>We have updated the Unboxed CSS validator and made a small change to the <a href="https://github.com/unboxed/be_valid_asset">be_valid_asset gem</a> (version 1.2.2) so that now if vendor specific extensions are used in css files,  validation will pass.</p>
+
+<p>To run css validation against all your stylesheets, try something like:</p>
+
+<pre><code>describe "css" do
+  it "should all be valid" do
+    Dir[Rails.root.join("app/assets/stylesheets/**/*.css")].each do |css_file|
+      puts css_file
+      css = File.read(css_file)
+      css.should be_valid_css3
+    end
+  end
+end
+</code></pre>
+
+<h2>Drag and Drop Grids (Andrew M)</h2>
+
+<p><a href="http://gridster.net/">http://gridster.net/</a>
+I have been trying to find some cool and interesting ways to do layouts of late for my own personal portfolio when I came accross Dragster a JQuery Drag and drop grid plugin. http://gridster.net/ Similar thinking, I believe, to some of the original ideas proposed for the Unboxed website a fair while back now.</p>
+
+<h2>Semantic breadcrumb (Robert P)</h2>
+
+<p><a href="http://coderwall.com/p/p0nvjw?i=5&amp;p=1&amp;q=">http://coderwall.com/p/p0nvjw?i=5&amp;p=1&amp;q=</a></p>
+
+<p>A quick but very useful tutorial that shows how we can add semantic meaning to our breadcrumbs. Pretty cool to see how Google catches these and puts them in their search results!</p>
+
+<h2>Amazing… (Leo C)</h2>
+
+<p><a href="http://patriciopalladino.com/blog/2012/08/09/non-alphanumeric-javascript.html">http://patriciopalladino.com/blog/2012/08/09/non-alphanumeric-javascript.html</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1034,121 +1178,6 @@ This is a very interesting new approach if you think about it, that&#8217;s prob
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/newsletter/blog/2012/05/25/the-week-of-winning/">The Week of Winning</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-25T15:00:00+01:00" pubdate data-updated="true">May 25<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This weeks instalment is awesome, mainly due to the lack of content from its author. Enjoy!</p>
-
-<h2>Railsy/Ruby Stuffs</h2>
-
-<h3><a href="http://www.rubymotion.com/">RubyMotion</a> (courtesy of Lee and Robert F)</h3>
-
-<p>It&#8217;s a toolset that sits on top of the iOS development tools to allow you to use Ruby to build iOS applications.</p>
-
-<p>this is something I&#8217;ve been speaking to Richard about trialling and will be doing so to build the UBXD expenses app in the near future.</p>
-
-<p><a href="http://rubyweekly.us1.list-manage.com/track/click?u=0618f6a79d6bb9675f313ceb2&amp;id=e1dc28d2b9&amp;e=3fcba5cd8e">Live</a> is a gem for RubyMotion implementing some of the ideas presented in Bret Victor’s awesome &#8216;Inventing on Principle&#8217; talk. It interfaces with the REPL and allows you to control it from the comfort of your preferred text editor.</p>
-
-<h3><a href="http://rubyweekly.us1.list-manage1.com/track/click?u=0618f6a79d6bb9675f313ceb2&amp;id=930588937e&amp;e=3fcba5cd8e">Objectify</a>: A Better Way to Build Rails Applications (courtesy of Robert F)</h3>
-
-<p>Objectify is a framework that codifies good object oriented design practices for building maintainable Rails applications. In this post, James Golick explains the motivations.</p>
-
-<h3>Spec Naming (courtesy of Murray)</h3>
-
-<p>A nugget from the StoryWeb specs:</p>
-
-<pre><code>describe "is_recommendable_to_recipient?" do
-  before :each do
-    @workgroup = Workgroup.make!(:name =&gt; 'The Giraffes')
-    @user = User.make!
-  end
-
-  context "for a workgroup" do
-    it "should be true" do
-      Story.make!(:published, :workgroups =&gt; [@workgroup]).is_recommendable_to_recipient?(@workgroup).should be_true
-    end
-
-    it "should be false" do
-      Story.make!.is_recommendable_to_recipient?(@workgroup).should be_false
-    end
-  end
-</code></pre>
-
-<p>Those example names come down to: &#8220;is_recommendable_to_recipient? for a workgroup should be true&#8221; and &#8220;is_recommendable_to_recipient? for a workgroup should be false&#8221;.  That&#8217;s not super helpful when examining the specdoc output.  Take a moment to name your specs with care, so that I don&#8217;t have to read the code within them to work out why it &#8220;should be true&#8221;.  For me, better names would be:</p>
-
-<p>&#8220;is_recommendable_to_recipient? for a workgroup should be true if the workgroup does not belong to the story&#8221; and
-&#8220;is_recommendable_to_recipient? for a workgroup should be false if the workgroup belongs to the story&#8221;</p>
-
-<p>Of course, there may be shorter ways to express this, and they would be fine too, but my point stands.  The names of all the specs, when read together should be enough to describe the behaviour of the object under spec without me reading the contents of the spec.</p>
-
-<h2>Dev things</h2>
-
-<h3>Jenkins Power (courtesy of Jolyon (or James if you work in Starbucks))</h3>
-
-<p>You gotta love a <a href="http://jenkins-ci.org/">CI</a> that enables you to specify a git repo and then runs tests on any branch that changes. But hold on just one second I hear you say, that&#8217;s not ideal if you&#8217;re working on a feature branch and the tests aren&#8217;t yet passing. Easily solved. Just specify the branches that you want to run tests against in the <a href="https://jenkins.unboxedconsulting.com/job/Five_Capetown/configure">project configuration</a>. Power to the people.</p>
-
-<h3>Cross-browser testing (courtesy of Austin)</h3>
-
-<p>An article outlining the set-up of (hopefully) optimal <a href="http://coding.smashingmagazine.com/2011/09/02/reliable-cross-browser-testing-part-1-internet-explorer/">browser testing</a></p>
-
-<h2>More things!</h2>
-
-<h3>New EU Cookie Law (courtesy of Murray and Leo)</h3>
-
-<p>A <a href="http://gilest.org/20120517-cookie-law-text.html">public domain letter</a> for web developers to send to their clients about the <a href="http://www.theregister.co.uk/2012/05/18/cookie_law_ico/">new EU cookie law</a> that comes into law at the end of this month:</p>
-
-<p>Seems pretty sensible and if you don&#8217;t already know what the law is, this is as good and simple a rundown as any I&#8217;ve read.</p>
-
-<h3>Colour Gradient Generator (courtesy of Matt P)</h3>
-
-<p>I found <a href="http://www.herethere.net/~samson/php/color_gradient/">this</a> a couple of weeks ago when working on something with Matt F.
-It allows you to specify a start colour, an end colour, and a number of steps, and it will generate the evenly spaced colours which lie between.
-As a side note, some of the wording on the WebApp is a bit confusing. The number being asked for is the number of steps in total, i.e. the number of colours included in the range will be 1 higher than this, or 1 less than the number of new colors generating (not counting the start and end point you specify).</p>
-
-<h2>Events</h2>
-
-<h3>Mobile Hack-a-Jam-a-Mashup-Athon (courtesy of Seb)</h3>
-
-<p>Theres is a <a href="http://digitalshoreditch.com/hack/">hack day</a> being run at the Google Campus tomorrow as part of Digital Shoreditch.
-I only found out about it today, looks like it could be interesting.</p>
-
-<h2>Saving the best for last (courtesy of Luke)</h2>
-
-<h3><a href="http://blog.objectmentor.com/articles/2007/11/02/active-record-vs-objects">Uncle Bob on the problem with ActiveRecord</a></h3>
-
-<h3><a href="http://www.drdobbs.com/architecture-and-design/240000393">Dr. Dobbs interviews Ward Cunningham</a> on the wiki, OO design, and all sorts of other stuff.</h3>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/newsletter/blog/page/2/">&larr; Older</a>
@@ -1164,6 +1193,10 @@ I only found out about it today, looks like it could be interesting.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/newsletter/blog/2012/08/10/the-week-that-went-better-than-the-last/">The Week That Went Better Than The Last</a>
+      </li>
+    
+      <li class="post">
         <a href="/newsletter/blog/2012/07/27/the-week-in-bitesize-chunks/">The week in bitesize chunks</a>
       </li>
     
@@ -1177,10 +1210,6 @@ I only found out about it today, looks like it could be interesting.</p>
     
       <li class="post">
         <a href="/newsletter/blog/2012/07/09/better-late-than-never/">Better Late Than Never</a>
-      </li>
-    
-      <li class="post">
-        <a href="/newsletter/blog/2012/06/29/new-post/">ALL the dev things</a>
       </li>
     
   </ul>
