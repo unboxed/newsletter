@@ -35,7 +35,7 @@ You can also pass options to the MessageVerifier on initialisation. These are th
 ##CSS Sprites to optimize websites for retina displays (Robert P)
 [http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/](http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/)
 
-Using CSS sprites is a very great idea and let's us to optimise sites, so we can save file size, bandwidth and make less http requests which all makes sense to the user.
+Using CSS sprites is a very great idea and lets us optimise sites, so we can save file size, bandwidth and make less http requests which all makes sense to the user.
 This article explains how to take CSS sprites to the next level and use them to serve retina displays with double pixel ratio images.
 
 ##Object#tap (Chris P)
