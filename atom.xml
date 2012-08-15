@@ -4,7 +4,7 @@
   <title><![CDATA[Unboxed Developer Newsletter]]></title>
   <link href="http://unboxed.github.com/newsletter/atom.xml" rel="self"/>
   <link href="http://unboxed.github.com/newsletter/"/>
-  <updated>2012-08-10T16:29:28+01:00</updated>
+  <updated>2012-08-15T12:23:20+01:00</updated>
   <id>http://unboxed.github.com/newsletter/</id>
   <author>
     <name><![CDATA[Unboxed Developers]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The amazing will continue]]></title>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/08/15/the-amazing-will-continue/"/>
+    <updated>2012-08-15T09:00:00+01:00</updated>
+    <id>http://unboxed.github.com/newsletter/blog/2012/08/15/the-amazing-will-continue</id>
+    <content type="html"><![CDATA[<h2>We&#8217;ve moved</h2>
+
+<p>We&#8217;re now sharing our developer related thoughts over on our brand new
+blog at <a href="https://ubxd.io">ubxd.io</a>.</p>
+
+<p>The amazing will continue!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Week That Went Better Than The Last]]></title>
@@ -50,7 +64,7 @@ end
 
 <p><a href="http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/">http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/</a></p>
 
-<p>Using CSS sprites is a very great idea and let&#8217;s us to optimise sites, so we can save file size, bandwidth and make less http requests which all makes sense to the user.
+<p>Using CSS sprites is a very great idea and lets us optimise sites, so we can save file size, bandwidth and make less http requests which all makes sense to the user.
 This article explains how to take CSS sprites to the next level and use them to serve retina displays with double pixel ratio images.</p>
 
 <h2>Object#tap (Chris P)</h2>
@@ -430,9 +444,9 @@ Here&#8217;s a list of the hacks
   
   <entry>
     <title type="html"><![CDATA[ALL the dev things]]></title>
-    <link href="http://unboxed.github.com/newsletter/blog/2012/06/29/new-post/"/>
+    <link href="http://unboxed.github.com/newsletter/blog/2012/06/29/this-week-in-dev/"/>
     <updated>2012-06-29T13:59:00+01:00</updated>
-    <id>http://unboxed.github.com/newsletter/blog/2012/06/29/new-post</id>
+    <id>http://unboxed.github.com/newsletter/blog/2012/06/29/this-week-in-dev</id>
     <content type="html"><![CDATA[<p>[Enter food-related obligatory dev-newsletter pun here].</p>
 
 <h2><a href="http://tinypng.org/">TinyPNG</a> (via Lee)</h2>
