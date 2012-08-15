@@ -9,6 +9,6 @@ categories:
 ## We've moved
 
 We're now sharing our developer related thoughts over on our brand new
-blog at [ubxd.io](https://ubxd.io).
+blog at [ubxd.io](http://ubxd.io).
 
 The amazing will continue!
